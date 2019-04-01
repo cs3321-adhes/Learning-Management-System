@@ -23,10 +23,22 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             //MessageBox.Show("Hi, " + textBox1.Text);
-            Form f = new Form2();
-            f.Show();
+            string user, pw;
+            user = username.Text;
+            pw = password.Text;
+            if (user == "username" && pw == "123456")
+            {
+                Form f = new Form2();
+                f.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Invalid Username and Password");
+            }
+            
 
-            this.Hide();
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -40,16 +52,6 @@ namespace WindowsFormsApp1
         }
 
         private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
         {
 
         }
