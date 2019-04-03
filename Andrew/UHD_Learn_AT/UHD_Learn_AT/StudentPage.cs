@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UHD_Learn_AT
 {
-    public partial class Form1 : Form
+    public partial class StudentPage : Form
     {
-        public Form1()
+        public StudentPage()
         {
             InitializeComponent();
         }
