@@ -24,7 +24,7 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection("Data Source = DESKTOP - ANDREW\\SQLEXPRESS; Initial Catalog = UHD_LEARN; Integrated Security = True");
-            SqlCommand
+       
 
 
             //MessageBox.Show("Hi, " + textBox1.Text);

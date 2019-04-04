@@ -23,35 +23,43 @@ namespace UHD_Learn_AT
         private void loginButton_Click(object sender, EventArgs e)
         {
             con.Open();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM Login where username='" + textBox1.Text + "' and password='" + textBox2.Text + "'", con);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Login where username='" + userBox.Text + "' and password='" + pwBox.Text + "'", con);
             SqlDataReader rd = cmd.ExecuteReader();
             string logType = "";
+            string ID = "";
+            string fname = "";
+            string lname = "";
             if (rd.HasRows)
             {
                 if (rd.Read())
                 {
-                    logType = rd.GetString(5);
+                    fname = rd.GetString(2).Trim();
+                    lname = rd.GetString(3).Trim();
+                    ID = rd.GetString(4).Trim();
+                    logType = rd.GetString(5).Trim();
                 }
+                rd.Close();
                 
-                if (logType.Trim().Equals("teacher"))
+                if (logType.Equals("teacher"))
                 {
                     TeacherPage teacherpage = new TeacherPage();
+                    teacherpage.Text = "Welcome, " + lname;
+                    teacherpage.ChangeLabel(fname + " " + lname); 
                     teacherpage.Show();
                     this.Hide();
                 }
-                else if (logType.Trim().Equals("student"))
+                else if (logType.Equals("student"))
                 {
                     StudentPage studentpage = new StudentPage();
                     studentpage.Show();
                     this.Hide();
                 }
-                else
-                {
-                    MessageBox.Show("Invalid Username and Password.");
-                }
-
             }
-            
+            else
+            {
+                MessageBox.Show("Invalid Username and Password.");
+            }
+            con.Close();
         }
     }
 }
