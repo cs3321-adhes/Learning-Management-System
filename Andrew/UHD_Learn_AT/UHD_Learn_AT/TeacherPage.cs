@@ -13,19 +13,15 @@ namespace UHD_Learn_AT
 {
     public partial class TeacherPage : Form
     {
-        //SqlConnection con = new SqlConnection("Data Source=DESKTOP-ANDREW\\SQLEXPRESS;Initial Catalog=UHD_LEARN;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-ANDREW\\SQLEXPRESS;Initial Catalog=UHD_LEARN;Integrated Security=True");
 
-        SqlConnection con = new SqlConnection(
-            "Data Source=ASUSVIVOBOOK\\SQLEXPRESS;Initial Catalog=UHD_Learn;Integrated Security=True");
+        //SqlConnection con = new SqlConnection("Data Source=ASUSVIVOBOOK\\SQLEXPRESS;Initial Catalog=UHD_Learn;Integrated Security=True");
+        
 
-        private static void ReadSingleRow(IDataRecord record)
-        {
-            MessageBox.Show(String.Format("{0}, {1}", record[0], record[1]));
-        }
-      
         public void ChangeLabel(string s)
         {
             label1.Text = s;
+            
         }
 
         public TeacherPage()
@@ -35,21 +31,32 @@ namespace UHD_Learn_AT
 
         private void TeacherPage_Load(object sender, EventArgs e)
         {
+            
+            List<string[]> courseNames = new List<string[]>();
+            string[] course = new string[4];
             con.Open();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM Course where teacher='" + this.Text + "'", con);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Course where teacher='" + label1.Text + "'", con);
             SqlDataReader rd = cmd.ExecuteReader();
 
             if (rd.HasRows)
             {
                 while (rd.Read())
                 {
-                    ReadSingleRow((IDataRecord)rd);
-                    //fname = rd.GetString(2).Trim();
-                    //lname = rd.GetString(3).Trim();
-                    //ID = rd.GetString(4).Trim();
-                    //logType = rd.GetString(5).Trim();
+                    for (int i = 0; i < 4; i++)
+                    {
+                        course[i] = rd.GetString(i).Trim();
+                    }
+                    courseNames.Add(course);
+                            
+                    
+                    
+
                 }
             }
+
+            courseLabel1.Text = courseNames[0][0] + " " + courseNames[0][1] + "_" + courseNames[0][2] + ": " + courseNames[0][3];
+            
+
         }
     }
 }
