@@ -93,6 +93,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StudentPage.resx">
+      <DependentUpon>StudentPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TeacherPage.resx">
       <DependentUpon>TeacherPage.cs</DependentUpon>
     </EmbeddedResource>

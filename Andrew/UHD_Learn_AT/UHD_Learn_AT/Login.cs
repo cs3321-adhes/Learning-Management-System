@@ -14,9 +14,9 @@ namespace UHD_Learn_AT
     public partial class Login : Form
     {
         // Initializes Sql Connection.  Input is from Connection String from DB properties
-        //SqlConnection con = new SqlConnection("Data Source=DESKTOP-ANDREW\\SQLEXPRESS;Initial Catalog=UHD_LEARN;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-ANDREW\\SQLEXPRESS;Initial Catalog=UHD_LEARN;Integrated Security=True");
 
-        SqlConnection con = new SqlConnection("Data Source=ASUSVIVOBOOK\\SQLEXPRESS;Initial Catalog=UHD_Learn;Integrated Security=True");
+        //SqlConnection con = new SqlConnection("Data Source=ASUSVIVOBOOK\\SQLEXPRESS;Initial Catalog=UHD_Learn;Integrated Security=True");
 
         public Login()
         {
@@ -88,6 +88,11 @@ namespace UHD_Learn_AT
 
             // closes DB connection
             con.Close();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+          
         }
     }
 }
