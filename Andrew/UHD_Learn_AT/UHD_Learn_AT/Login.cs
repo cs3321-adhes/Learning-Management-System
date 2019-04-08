@@ -14,9 +14,9 @@ namespace UHD_Learn_AT
     public partial class Login : Form
     {
         // Initializes Sql Connection.  Input is from Connection String from DB properties
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-ANDREW\\SQLEXPRESS;Initial Catalog=UHD_LEARN;Integrated Security=True");
+        //SqlConnection con = new SqlConnection("Data Source=DESKTOP-ANDREW\\SQLEXPRESS;Initial Catalog=UHD_LEARN;Integrated Security=True");
 
-        //SqlConnection con = new SqlConnection("Data Source=ASUSVIVOBOOK\\SQLEXPRESS;Initial Catalog=UHD_Learn;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=ASUSVIVOBOOK\\SQLEXPRESS;Initial Catalog=UHD_Learn;Integrated Security=True");
 
         public Login()
         {
@@ -77,7 +77,7 @@ namespace UHD_Learn_AT
                 {
                     StudentPage studentpage = new StudentPage();
                     studentpage.Show();
-                    this.Close();
+                    this.Hide();
                 }
             }
             else
@@ -95,6 +95,7 @@ namespace UHD_Learn_AT
           
         }
 
+        // Opens forget pw page
         private void forgetPW_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             passwordForm passwordForm = new passwordForm();

@@ -14,11 +14,11 @@ namespace UHD_Learn_AT
 
     public partial class TeacherPage : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-ANDREW\\SQLEXPRESS;Initial Catalog=UHD_LEARN;Integrated Security=True");
+        //SqlConnection con = new SqlConnection("Data Source=DESKTOP-ANDREW\\SQLEXPRESS;Initial Catalog=UHD_LEARN;Integrated Security=True");
 
-        //SqlConnection con = new SqlConnection("Data Source=ASUSVIVOBOOK\\SQLEXPRESS;Initial Catalog=UHD_Learn;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=ASUSVIVOBOOK\\SQLEXPRESS;Initial Catalog=UHD_Learn;Integrated Security=True");
         
-
+        // Function to change the logout label based on info from log in screen.
         public void ChangeLabel(string s)
         {
             label1.Text = s;
@@ -32,25 +32,30 @@ namespace UHD_Learn_AT
 
         private void TeacherPage_Load(object sender, EventArgs e)
         {
-            int numOfCourse;
+            // Declared list of courses to hold course info
             List<Course> courseNames = new List<Course>();
             con.Open();
+            // Select only courses taught by this teacher
             SqlCommand cmd = new SqlCommand("SELECT * FROM Course where teacher='" + label1.Text + "'", con);
             SqlDataReader rd = cmd.ExecuteReader();
 
+            // If there are courses taught by this teacher
             if (rd.HasRows)
             {
+
+                // reads the table
                 while (rd.Read())
                 {
+                    // Add course info to course list
                     courseNames.Add(new Course(rd.GetString(0).Trim(), rd.GetString(1).Trim(), rd.GetString(2).Trim(), rd.GetString(3).Trim()));             
                     
                 }
             }
-            numOfCourse = courseNames.Count;
+            var numOfCourse = courseNames.Count;
             switch (numOfCourse)
             {
                 case 1:
-                    courseLabel1.Text = courseNames[0].Crn + " " + courseNames[0].Subj + "_" + courseNames[0].Cnum + ": " + courseNames[0].Name;
+                    courseLabel1.Text = courseNames[0].Crn + " " + courseNames[0].Subj + "_" + courseNames[0].Cnum + ": " + courseNames[0].Name + "- Yu Chang";
                     courseLabel1.Show();
                     break;
                 case 2:
