@@ -77,7 +77,7 @@ namespace UHD_Learn_AT
                 {
                     StudentPage studentpage = new StudentPage();
                     studentpage.Show();
-                    this.Hide();
+                    this.Close();
                 }
             }
             else
@@ -93,6 +93,14 @@ namespace UHD_Learn_AT
         private void Login_Load(object sender, EventArgs e)
         {
           
+        }
+
+        private void forgetPW_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            passwordForm passwordForm = new passwordForm();
+            passwordForm.Show();
+            this.Hide();
+
         }
     }
 }

@@ -88,6 +88,14 @@ namespace UHD_Learn_AT
         {
             Environment.Exit(0);
         }
+
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            this.Hide();
+            login.Show();
+
+        }
     }
     public class Course
     {
