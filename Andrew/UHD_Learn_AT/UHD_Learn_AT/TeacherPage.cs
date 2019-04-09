@@ -51,11 +51,16 @@ namespace UHD_Learn_AT
                     
                 }
             }
+
+            // To store the number of courses
             var numOfCourse = courseNames.Count;
+
+            // switch statement for different number of courses
             switch (numOfCourse)
             {
                 case 1:
-                    courseLabel1.Text = courseNames[0].Crn + " " + courseNames[0].Subj + "_" + courseNames[0].Cnum + ": " + courseNames[0].Name + "- Yu Chang";
+                    // Sets course labels to display course number, subject, sub num and course name
+                    courseLabel1.Text = courseNames[0].Crn + " " + courseNames[0].Subj + "_" + courseNames[0].Cnum + ": " + courseNames[0].Name;
                     courseLabel1.Show();
                     break;
                 case 2:
@@ -102,8 +107,11 @@ namespace UHD_Learn_AT
 
         }
     }
+
+    // class created named course to store course info
     public class Course
     {
+        // properties with getters and setters for each course attribute
         public string Crn { get; private set; }
 
         public string Subj { get; private set; }
@@ -112,6 +120,7 @@ namespace UHD_Learn_AT
 
         public string Name { get; private set; }
 
+        // parametized constructor
         public Course(string c, string s, string cn, string n)
         {
             Crn = c;
