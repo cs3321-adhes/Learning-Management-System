@@ -32,10 +32,10 @@
             this.logoutButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.courseLabel1 = new System.Windows.Forms.LinkLabel();
-            this.courseLabel2 = new System.Windows.Forms.LinkLabel();
-            this.courseLabel3 = new System.Windows.Forms.LinkLabel();
             this.courseLabel4 = new System.Windows.Forms.LinkLabel();
+            this.courseLabel3 = new System.Windows.Forms.LinkLabel();
+            this.courseLabel2 = new System.Windows.Forms.LinkLabel();
+            this.courseLabel1 = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,6 +57,7 @@
             this.logoutButton.TabIndex = 1;
             this.logoutButton.Text = "LOG OUT";
             this.logoutButton.UseVisualStyleBackColor = true;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
             // label2
             // 
@@ -81,25 +82,16 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
-            // courseLabel1
+            // courseLabel4
             // 
-            this.courseLabel1.AutoSize = true;
-            this.courseLabel1.Location = new System.Drawing.Point(13, 51);
-            this.courseLabel1.Name = "courseLabel1";
-            this.courseLabel1.Size = new System.Drawing.Size(55, 13);
-            this.courseLabel1.TabIndex = 0;
-            this.courseLabel1.TabStop = true;
-            this.courseLabel1.Text = "linkLabel1";
-            // 
-            // courseLabel2
-            // 
-            this.courseLabel2.AutoSize = true;
-            this.courseLabel2.Location = new System.Drawing.Point(13, 94);
-            this.courseLabel2.Name = "courseLabel2";
-            this.courseLabel2.Size = new System.Drawing.Size(55, 13);
-            this.courseLabel2.TabIndex = 1;
-            this.courseLabel2.TabStop = true;
-            this.courseLabel2.Text = "linkLabel2";
+            this.courseLabel4.AutoSize = true;
+            this.courseLabel4.Location = new System.Drawing.Point(13, 185);
+            this.courseLabel4.Name = "courseLabel4";
+            this.courseLabel4.Size = new System.Drawing.Size(55, 13);
+            this.courseLabel4.TabIndex = 3;
+            this.courseLabel4.TabStop = true;
+            this.courseLabel4.Text = "linkLabel4";
+            this.courseLabel4.Visible = false;
             // 
             // courseLabel3
             // 
@@ -110,16 +102,29 @@
             this.courseLabel3.TabIndex = 2;
             this.courseLabel3.TabStop = true;
             this.courseLabel3.Text = "linkLabel3";
+            this.courseLabel3.Visible = false;
             // 
-            // courseLabel4
+            // courseLabel2
             // 
-            this.courseLabel4.AutoSize = true;
-            this.courseLabel4.Location = new System.Drawing.Point(16, 187);
-            this.courseLabel4.Name = "courseLabel4";
-            this.courseLabel4.Size = new System.Drawing.Size(55, 13);
-            this.courseLabel4.TabIndex = 3;
-            this.courseLabel4.TabStop = true;
-            this.courseLabel4.Text = "linkLabel4";
+            this.courseLabel2.AutoSize = true;
+            this.courseLabel2.Location = new System.Drawing.Point(13, 94);
+            this.courseLabel2.Name = "courseLabel2";
+            this.courseLabel2.Size = new System.Drawing.Size(55, 13);
+            this.courseLabel2.TabIndex = 1;
+            this.courseLabel2.TabStop = true;
+            this.courseLabel2.Text = "linkLabel2";
+            this.courseLabel2.Visible = false;
+            // 
+            // courseLabel1
+            // 
+            this.courseLabel1.AutoSize = true;
+            this.courseLabel1.Location = new System.Drawing.Point(13, 51);
+            this.courseLabel1.Name = "courseLabel1";
+            this.courseLabel1.Size = new System.Drawing.Size(55, 13);
+            this.courseLabel1.TabIndex = 0;
+            this.courseLabel1.TabStop = true;
+            this.courseLabel1.Text = "linkLabel1";
+            this.courseLabel1.Visible = false;
             // 
             // TeacherPage
             // 
@@ -132,6 +137,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "TeacherPage";
             this.Text = "Form2";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TeacherPage_FormClosed);
             this.Load += new System.EventHandler(this.TeacherPage_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

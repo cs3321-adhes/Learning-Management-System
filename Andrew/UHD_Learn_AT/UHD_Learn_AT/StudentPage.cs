@@ -16,5 +16,15 @@ namespace UHD_Learn_AT
         {
             InitializeComponent();
         }
+
+        private void StudentPage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StudentPage_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }
