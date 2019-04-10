@@ -27,6 +27,7 @@ namespace UHD_Learn_AT
         {
             // opens connection
             con.Open();
+
             // Sql command to find the row that matches the username and password the user inputs.
             SqlCommand cmd = new SqlCommand("SELECT * FROM Login where username='" + userBox.Text + "' and password='" + pwBox.Text + "'", con);
 
@@ -84,6 +85,8 @@ namespace UHD_Learn_AT
             {
                 // if username and password doesn't match, a message box will open and display this message
                 MessageBox.Show("Invalid Username and Password.");
+                this.userBox.Text = "";
+                this.pwBox.Text = "";
             }
 
             // closes DB connection

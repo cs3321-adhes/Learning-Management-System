@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="tCoursePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tCoursePage.Designer.cs">
+      <DependentUpon>tCoursePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="PasswordPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </Compile>
     <EmbeddedResource Include="StudentPage.resx">
       <DependentUpon>StudentPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tCoursePage.resx">
+      <DependentUpon>tCoursePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherPage.resx">
       <DependentUpon>TeacherPage.cs</DependentUpon>

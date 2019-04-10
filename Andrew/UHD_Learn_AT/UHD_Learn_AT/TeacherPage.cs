@@ -61,6 +61,7 @@ namespace UHD_Learn_AT
                 case 1:
                     // Sets course labels to display course number, subject, sub num and course name
                     courseLabel1.Text = courseNames[0].Crn + " " + courseNames[0].Subj + "_" + courseNames[0].Cnum + ": " + courseNames[0].Name;
+                    
                     courseLabel1.Show();
                     break;
                 case 2:
@@ -91,7 +92,7 @@ namespace UHD_Learn_AT
                     break;
                  
             }
-           
+           con.Close();
         }
 
         private void TeacherPage_FormClosed(object sender, FormClosedEventArgs e)
@@ -105,6 +106,22 @@ namespace UHD_Learn_AT
             this.Hide();
             login.Show();
 
+        }
+
+        private void CreateCoursePage()
+        {
+
+        }
+
+        private void courseLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            //con.Open();
+            SqlCommand cmd = new SqlCommand("Select * FROM Course WHERE CRN = '" + courseLabel1.Tag + "'", con);
+            tCoursePage tcPage = new tCoursePage();
+
+            tcPage.Text = courseLabel1.Text;
+            this.Hide();
+            tcPage.Show();
         }
     }
 
