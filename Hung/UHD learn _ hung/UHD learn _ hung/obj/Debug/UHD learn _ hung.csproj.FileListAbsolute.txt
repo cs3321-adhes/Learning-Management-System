@@ -18,3 +18,23 @@ C:\Users\Kent\Documents\Learning-Management-System-master\Hung\UHD learn _ hung\
 C:\Users\Kent\Documents\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD learn _ hung.csproj.CoreCompileInputs.cache
 C:\Users\Kent\Documents\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD learn _ hung.exe
 C:\Users\Kent\Documents\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD learn _ hung.pdb
+C:\Users\lyh7\Downloads\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\bin\Debug\UHD learn _ hung.exe.config
+C:\Users\lyh7\Downloads\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\bin\Debug\UHD learn _ hung.exe
+C:\Users\lyh7\Downloads\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\bin\Debug\UHD learn _ hung.pdb
+C:\Users\lyh7\Downloads\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD learn _ hung.csprojAssemblyReference.cache
+C:\Users\lyh7\Downloads\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD_learn___hung.StudentPage.resources
+C:\Users\lyh7\Downloads\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD_learn___hung.Properties.Resources.resources
+C:\Users\lyh7\Downloads\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD learn _ hung.csproj.GenerateResource.cache
+C:\Users\lyh7\Downloads\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD learn _ hung.csproj.CoreCompileInputs.cache
+C:\Users\lyh7\Downloads\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD learn _ hung.exe
+C:\Users\lyh7\Downloads\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD learn _ hung.pdb
+C:\Users\Kent\Documents\GitHub\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\bin\Debug\UHD learn _ hung.exe.config
+C:\Users\Kent\Documents\GitHub\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\bin\Debug\UHD learn _ hung.exe
+C:\Users\Kent\Documents\GitHub\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\bin\Debug\UHD learn _ hung.pdb
+C:\Users\Kent\Documents\GitHub\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD learn _ hung.csprojResolveAssemblyReference.cache
+C:\Users\Kent\Documents\GitHub\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD_learn___hung.StudentPage.resources
+C:\Users\Kent\Documents\GitHub\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD_learn___hung.Properties.Resources.resources
+C:\Users\Kent\Documents\GitHub\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD learn _ hung.csproj.GenerateResource.Cache
+C:\Users\Kent\Documents\GitHub\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD learn _ hung.csproj.CoreCompileInputs.cache
+C:\Users\Kent\Documents\GitHub\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD learn _ hung.exe
+C:\Users\Kent\Documents\GitHub\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD learn _ hung.pdb
