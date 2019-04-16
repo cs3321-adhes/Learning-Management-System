@@ -22,5 +22,10 @@ namespace UHD_Learn_AT
             listBox1.Text = "CS 3321 Software Engineering";
             
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            syllabusLabel.Show();
+        }
     }
 }
