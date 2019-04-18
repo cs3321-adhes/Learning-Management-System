@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UHD_Learn_AT
+namespace UHD_Learn
 {
     static class Program
     {

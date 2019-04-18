@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace UHD_Learn_AT.Properties
+namespace UHD_Learn.Properties
 {
 
 
