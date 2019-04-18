@@ -32,6 +32,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.courseLabel4 = new System.Windows.Forms.Label();
+            this.courseLabel3 = new System.Windows.Forms.Label();
+            this.courseLabel2 = new System.Windows.Forms.Label();
+            this.courseLabel1 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.text5 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,19 +47,11 @@
             this.text3 = new System.Windows.Forms.TextBox();
             this.text2 = new System.Windows.Forms.TextBox();
             this.text1 = new System.Windows.Forms.TextBox();
-            this.courseLabel4 = new System.Windows.Forms.LinkLabel();
-            this.courseLabel3 = new System.Windows.Forms.LinkLabel();
-            this.courseLabel2 = new System.Windows.Forms.LinkLabel();
-            this.courseLabel1 = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,6 +88,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.courseLabel4);
+            this.groupBox1.Controls.Add(this.courseLabel3);
+            this.groupBox1.Controls.Add(this.courseLabel2);
+            this.groupBox1.Controls.Add(this.courseLabel1);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
@@ -99,10 +103,6 @@
             this.groupBox1.Controls.Add(this.text3);
             this.groupBox1.Controls.Add(this.text2);
             this.groupBox1.Controls.Add(this.text1);
-            this.groupBox1.Controls.Add(this.courseLabel4);
-            this.groupBox1.Controls.Add(this.courseLabel3);
-            this.groupBox1.Controls.Add(this.courseLabel2);
-            this.groupBox1.Controls.Add(this.courseLabel1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(24, 55);
             this.groupBox1.Name = "groupBox1";
@@ -110,6 +110,86 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // courseLabel4
+            // 
+            this.courseLabel4.AutoSize = true;
+            this.courseLabel4.Location = new System.Drawing.Point(18, 169);
+            this.courseLabel4.Name = "courseLabel4";
+            this.courseLabel4.Size = new System.Drawing.Size(41, 13);
+            this.courseLabel4.TabIndex = 19;
+            this.courseLabel4.Text = "label11";
+            this.courseLabel4.Visible = false;
+            // 
+            // courseLabel3
+            // 
+            this.courseLabel3.AutoSize = true;
+            this.courseLabel3.Location = new System.Drawing.Point(18, 131);
+            this.courseLabel3.Name = "courseLabel3";
+            this.courseLabel3.Size = new System.Drawing.Size(41, 13);
+            this.courseLabel3.TabIndex = 18;
+            this.courseLabel3.Text = "label10";
+            this.courseLabel3.Visible = false;
+            // 
+            // courseLabel2
+            // 
+            this.courseLabel2.AutoSize = true;
+            this.courseLabel2.Location = new System.Drawing.Point(18, 90);
+            this.courseLabel2.Name = "courseLabel2";
+            this.courseLabel2.Size = new System.Drawing.Size(35, 13);
+            this.courseLabel2.TabIndex = 17;
+            this.courseLabel2.Text = "label9";
+            this.courseLabel2.Visible = false;
+            // 
+            // courseLabel1
+            // 
+            this.courseLabel1.AutoSize = true;
+            this.courseLabel1.Location = new System.Drawing.Point(18, 53);
+            this.courseLabel1.Name = "courseLabel1";
+            this.courseLabel1.Size = new System.Drawing.Size(35, 13);
+            this.courseLabel1.TabIndex = 16;
+            this.courseLabel1.Text = "label8";
+            this.courseLabel1.Visible = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(132, 201);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(33, 13);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "D = 1";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(94, 201);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(32, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "C = 2";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(56, 201);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(32, 13);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "B = 3";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(18, 201);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "A = 4";
             // 
             // button6
             // 
@@ -123,9 +203,11 @@
             // 
             // text5
             // 
-            this.text5.Enabled = false;
+            this.text5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text5.ForeColor = System.Drawing.Color.Red;
             this.text5.Location = new System.Drawing.Point(154, 219);
             this.text5.Name = "text5";
+            this.text5.ReadOnly = true;
             this.text5.Size = new System.Drawing.Size(100, 20);
             this.text5.TabIndex = 10;
             this.text5.Text = "GPA";
@@ -138,7 +220,6 @@
             this.label3.Size = new System.Drawing.Size(67, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "Enter Credits";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // text4
             // 
@@ -167,51 +248,6 @@
             this.text1.Name = "text1";
             this.text1.Size = new System.Drawing.Size(100, 20);
             this.text1.TabIndex = 5;
-            this.text1.TextChanged += new System.EventHandler(this.text1_TextChanged);
-            // 
-            // courseLabel4
-            // 
-            this.courseLabel4.AutoSize = true;
-            this.courseLabel4.Location = new System.Drawing.Point(18, 171);
-            this.courseLabel4.Name = "courseLabel4";
-            this.courseLabel4.Size = new System.Drawing.Size(55, 13);
-            this.courseLabel4.TabIndex = 4;
-            this.courseLabel4.TabStop = true;
-            this.courseLabel4.Text = "linkLabel4";
-            this.courseLabel4.Visible = false;
-            // 
-            // courseLabel3
-            // 
-            this.courseLabel3.AutoSize = true;
-            this.courseLabel3.Location = new System.Drawing.Point(18, 132);
-            this.courseLabel3.Name = "courseLabel3";
-            this.courseLabel3.Size = new System.Drawing.Size(55, 13);
-            this.courseLabel3.TabIndex = 3;
-            this.courseLabel3.TabStop = true;
-            this.courseLabel3.Text = "linkLabel3";
-            this.courseLabel3.Visible = false;
-            // 
-            // courseLabel2
-            // 
-            this.courseLabel2.AutoSize = true;
-            this.courseLabel2.Location = new System.Drawing.Point(18, 91);
-            this.courseLabel2.Name = "courseLabel2";
-            this.courseLabel2.Size = new System.Drawing.Size(55, 13);
-            this.courseLabel2.TabIndex = 2;
-            this.courseLabel2.TabStop = true;
-            this.courseLabel2.Text = "linkLabel2";
-            this.courseLabel2.Visible = false;
-            // 
-            // courseLabel1
-            // 
-            this.courseLabel1.AutoSize = true;
-            this.courseLabel1.Location = new System.Drawing.Point(18, 50);
-            this.courseLabel1.Name = "courseLabel1";
-            this.courseLabel1.Size = new System.Drawing.Size(55, 13);
-            this.courseLabel1.TabIndex = 1;
-            this.courseLabel1.TabStop = true;
-            this.courseLabel1.Text = "linkLabel1";
-            this.courseLabel1.Visible = false;
             // 
             // label2
             // 
@@ -264,46 +300,6 @@
             this.button2.Text = "Estimate GPA";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(18, 201);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 13);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "A = 4";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(56, 201);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 13);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "B = 3";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(94, 201);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 13);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "C = 2";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(132, 201);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(33, 13);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "D = 1";
-            // 
             // GPA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -333,10 +329,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.LinkLabel courseLabel4;
-        private System.Windows.Forms.LinkLabel courseLabel3;
-        private System.Windows.Forms.LinkLabel courseLabel2;
-        private System.Windows.Forms.LinkLabel courseLabel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox text5;
         private System.Windows.Forms.Label label3;
@@ -353,5 +345,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label courseLabel4;
+        private System.Windows.Forms.Label courseLabel3;
+        private System.Windows.Forms.Label courseLabel2;
+        private System.Windows.Forms.Label courseLabel1;
     }
 }
