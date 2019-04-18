@@ -11,31 +11,22 @@ using System.Windows.Forms;
 
 namespace UHD_Learn
 {
-
-    public partial class StudentPage : Form
+    public partial class GPA : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=LY\\MSSQLSERVER01;Initial Catalog=\"UHD learn\";Integrated Security=True");
-        public StudentPage()
+        float final, sumCredit, total;
+
+        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\keens\\Documents\\UHD Learn.mdf\";Integrated Security=True;Connect Timeout=30");
+
+        public GPA()
         {
             InitializeComponent();
         }
 
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        public void ChangeLabel(string s)
-        {
-            label2.Text = s;
-        }
-
-        private void StudentPage_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
             con.Open();
             SqlCommand cmd = new SqlCommand("Select * FROM Student where fname='Hung'", con);
-            
+
             SqlDataReader rd = cmd.ExecuteReader();
             string fname = "";
             string lname = "";
@@ -44,18 +35,18 @@ namespace UHD_Learn
 
             if (rd.HasRows)
             {
-                if(rd.Read())
+                if (rd.Read())
                 {
                     fname = rd.GetString(0).Trim();
                     lname = rd.GetString(1).Trim();
                 }
             }
 
-            this.label2.Text = fname + " " + lname;
+            this.label1.Text = fname + " " + lname;
 
             //ChangeLabel(name);
 
-            this.Text = "Welcome, " + fname;
+            this.Text = "GPA Calculator";
             rd.Close();
 
             SqlCommand cmd1 = new SqlCommand("Select * FROM Course where CRN IN ('23924','24776')", con);
@@ -76,28 +67,34 @@ namespace UHD_Learn
             switch (numOfCourse)
             {
                 case 1:
-                    courseLabel1.Text = courseNames[0].Crn + " " + courseNames[0].Subj + "_" + courseNames[0].Cnum + ": " + courseNames[0].Name + "-" + courseNames[0].tName;
+                    courseLabel1.Text = courseNames[0].Subj + "_" + courseNames[0].Cnum;
                     courseLabel1.Show();
+                    text2.Hide();
+                    text3.Hide();
+                    text4.Hide();
                     break;
                 case 2:
-                    courseLabel1.Text = courseNames[0].Crn + " " + courseNames[0].Subj + "_" + courseNames[0].Cnum + ": " + courseNames[0].Name + "-" + courseNames[0].tName;
-                    courseLabel2.Text = courseNames[1].Crn + " " + courseNames[1].Subj + "_" + courseNames[1].Cnum + ": " + courseNames[1].Name + "-" + courseNames[0].tName;
+                    courseLabel1.Text = courseNames[0].Subj + "_" + courseNames[0].Cnum;
+                    courseLabel2.Text = courseNames[1].Subj + "_" + courseNames[1].Cnum;
                     courseLabel1.Show();
                     courseLabel2.Show();
+                    text3.Hide();
+                    text4.Hide();
                     break;
                 case 3:
-                    courseLabel1.Text = courseNames[0].Crn + " " + courseNames[0].Subj + "_" + courseNames[0].Cnum + ": " + courseNames[0].Name + "-" + courseNames[0].tName;
-                    courseLabel2.Text = courseNames[1].Crn + " " + courseNames[1].Subj + "_" + courseNames[1].Cnum + ": " + courseNames[1].Name + "-" + courseNames[0].tName;
-                    courseLabel3.Text = courseNames[2].Crn + " " + courseNames[2].Subj + "_" + courseNames[2].Cnum + ": " + courseNames[2].Name + "-" + courseNames[0].tName;
+                    courseLabel1.Text = courseNames[0].Subj + "_" + courseNames[0].Cnum;
+                    courseLabel2.Text = courseNames[1].Subj + "_" + courseNames[1].Cnum;
+                    courseLabel3.Text = courseNames[2].Subj + "_" + courseNames[2].Cnum; 
                     courseLabel1.Show();
                     courseLabel2.Show();
                     courseLabel3.Show();
+                    text4.Hide();
                     break;
                 case 4:
-                    courseLabel1.Text = courseNames[0].Crn + " " + courseNames[0].Subj + "_" + courseNames[0].Cnum + ": " + courseNames[0].Name + "-" + courseNames[0].tName;
-                    courseLabel2.Text = courseNames[1].Crn + " " + courseNames[1].Subj + "_" + courseNames[1].Cnum + ": " + courseNames[1].Name + "-" + courseNames[0].tName;
-                    courseLabel3.Text = courseNames[2].Crn + " " + courseNames[2].Subj + "_" + courseNames[2].Cnum + ": " + courseNames[2].Name + "-" + courseNames[0].tName;
-                    courseLabel4.Text = courseNames[3].Crn + " " + courseNames[3].Subj + "_" + courseNames[3].Cnum + ": " + courseNames[3].Name + "-" + courseNames[0].tName;
+                    courseLabel1.Text = courseNames[0].Subj + "_" + courseNames[0].Cnum;
+                    courseLabel2.Text = courseNames[1].Subj + "_" + courseNames[1].Cnum;
+                    courseLabel3.Text = courseNames[2].Subj + "_" + courseNames[2].Cnum;
+                    courseLabel4.Text = courseNames[3].Subj + "_" + courseNames[3].Cnum;
                     courseLabel1.Show();
                     courseLabel2.Show();
                     courseLabel3.Show();
@@ -130,12 +127,40 @@ namespace UHD_Learn
                 Name = n;
                 tName = t;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
 
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            StudentPage studentpage = new StudentPage();
+            studentpage.Show();
+            this.Hide();
+        }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            float course1Grade = 0, course2Grade = 0, course3Grade = 0, course4Grade = 0;
+            
+
+
+            final = total / sumCredit;
+
+            text5.Text = final.ToString("0.00");
+            text5.Show();
         }
     }
 }

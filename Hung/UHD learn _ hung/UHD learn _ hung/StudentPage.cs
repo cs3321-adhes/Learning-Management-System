@@ -14,7 +14,7 @@ namespace UHD_Learn
 
     public partial class StudentPage : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=LY\\MSSQLSERVER01;Initial Catalog=\"UHD learn\";Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\keens\\Documents\\UHD Learn.mdf\";Integrated Security=True;Connect Timeout=30");
         public StudentPage()
         {
             InitializeComponent();
@@ -134,6 +134,28 @@ namespace UHD_Learn
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            GPA gpa = new GPA();
+            gpa.Show();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
         {
 
         }
