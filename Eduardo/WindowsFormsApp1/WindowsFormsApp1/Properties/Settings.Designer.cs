@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace UHD_Learn.Properties
+namespace WindowsFormsApp1.Properties
 {
 
 
