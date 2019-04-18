@@ -51,6 +51,12 @@
     <Compile Include="GPA.Designer.cs">
       <DependentUpon>GPA.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyGrades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyGrades.designer.cs">
+      <DependentUpon>MyGrades.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GPA.resx">
       <DependentUpon>GPA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyGrades.resx">
+      <DependentUpon>MyGrades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentPage.resx">
       <DependentUpon>StudentPage.cs</DependentUpon>

@@ -107,6 +107,11 @@ namespace UHD_Learn
 
         }
 
+        public class Grades
+        {
+            public string grade { get; private set; }
+        }
+
         public class Course
         {
             public string Crn { get; private set; }
@@ -146,16 +151,36 @@ namespace UHD_Learn
             this.Hide();
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MyGrades mygrades = new MyGrades();
+            mygrades.Show();
+            this.Hide();
+        }
+
         private void button5_Click(object sender, EventArgs e)
         {
+
+        }
+
+        public void getGrade(string s)
+        {
+            con.Open();
+            SqlCommand cmd3 = new SqlCommand("Select * FROM Student where fname='Hung'", con);
+
+            SqlDataReader rd3 = cmd3.ExecuteReader();
+
 
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             float course1Grade = 0, course2Grade = 0, course3Grade = 0, course4Grade = 0;
-            
 
+            course1Grade = float.Parse(text1.Text); 
+            course2Grade = float.Parse(text2.Text);
+            course3Grade = float.Parse(text2.Text);
+            course4Grade = float.Parse(text2.Text);
 
             final = total / sumCredit;
 

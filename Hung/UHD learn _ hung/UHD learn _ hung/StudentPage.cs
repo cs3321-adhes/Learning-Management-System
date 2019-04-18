@@ -159,5 +159,12 @@ namespace UHD_Learn
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MyGrades mygrades = new MyGrades();
+            mygrades.Show();
+            this.Hide();
+        }
     }
 }

@@ -49,3 +49,15 @@ C:\Users\keens\Downloads\Learning-Management-System-master\Learning-Management-S
 C:\Users\keens\Downloads\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD learn _ hung.pdb
 C:\Users\keens\Downloads\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD_Learn.GPA.resources
 C:\Users\keens\Downloads\Learning-Management-System-master\Learning-Management-System-master\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD_Learn.StudentPage.resources
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Hung\UHD learn _ hung\UHD learn _ hung\bin\Debug\UHD learn _ hung.exe.config
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Hung\UHD learn _ hung\UHD learn _ hung\bin\Debug\UHD learn _ hung.exe
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Hung\UHD learn _ hung\UHD learn _ hung\bin\Debug\UHD learn _ hung.pdb
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD learn _ hung.csprojResolveAssemblyReference.cache
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD_Learn.GPA.resources
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD_Learn.StudentPage.resources
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD_learn___hung.Properties.Resources.resources
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD learn _ hung.csproj.GenerateResource.Cache
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD learn _ hung.csproj.CoreCompileInputs.cache
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD learn _ hung.exe
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD learn _ hung.pdb
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD_Learn.MyGrades.resources
