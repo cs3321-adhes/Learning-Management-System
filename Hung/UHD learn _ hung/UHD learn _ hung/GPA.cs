@@ -13,7 +13,6 @@ namespace UHD_Learn
 {
     public partial class GPA : Form
     {
-        float final, sumCredit, total;
 
         SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\keens\\Documents\\UHD Learn.mdf\";Integrated Security=True;Connect Timeout=30");
 
@@ -104,12 +103,7 @@ namespace UHD_Learn
                     break;
 
             }
-
-        }
-
-        public class Grades
-        {
-            public string grade { get; private set; }
+            rd.Close();
         }
 
         public class Course
@@ -163,29 +157,64 @@ namespace UHD_Learn
 
         }
 
-        public void getGrade(string s)
-        {
-            con.Open();
-            SqlCommand cmd3 = new SqlCommand("Select * FROM Student where fname='Hung'", con);
-
-            SqlDataReader rd3 = cmd3.ExecuteReader();
-
-
-        }
-
         private void button6_Click(object sender, EventArgs e)
         {
-            float course1Grade = 0, course2Grade = 0, course3Grade = 0, course4Grade = 0;
+            double[] courseGrades;
+            courseGrades = new double[4];
 
-            course1Grade = float.Parse(text1.Text); 
-            course2Grade = float.Parse(text2.Text);
-            course3Grade = float.Parse(text2.Text);
-            course4Grade = float.Parse(text2.Text);
+            double final, sumCredit = 1, total = 0;
+
+            if (String.IsNullOrEmpty(text1.Text))
+                courseGrades[0] = 0;
+            else
+                courseGrades[0] = double.Parse(text1.Text);
+            if (String.IsNullOrEmpty(text2.Text))
+                courseGrades[1] = 0;
+            else
+                courseGrades[1] = double.Parse(text2.Text);
+            if (String.IsNullOrEmpty(text3.Text))
+                courseGrades[2] = 0;
+            else
+                courseGrades[2] = double.Parse(text3.Text);
+            if (String.IsNullOrEmpty(text4.Text))
+                courseGrades[3] = 0;
+            else
+                courseGrades[3] = double.Parse(text4.Text);
+
+            sumCredit = courseGrades[0] + courseGrades[1] + courseGrades[2] + courseGrades[3];
+
+            SqlCommand cmd2 = new SqlCommand("Select * FROM Course where CRN IN ('23924','24776')", con);
+
+            SqlDataReader rd = cmd2.ExecuteReader();
+
+            int i = 5, j = 0;
+            if (rd.HasRows)
+            {
+                while (rd.Read())
+                {
+                    double n = Convert.ToDouble(rd.GetDouble(i));
+                    total = total + n * courseGrades[j];
+                    j++;
+                    n++;
+                }
+            }
 
             final = total / sumCredit;
 
             text5.Text = final.ToString("0.00");
             text5.Show();
+
+            rd.Close();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void text1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
