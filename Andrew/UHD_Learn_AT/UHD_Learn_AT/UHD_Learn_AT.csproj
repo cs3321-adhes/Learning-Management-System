@@ -99,6 +99,11 @@
     <Compile Include="tGrades.Designer.cs">
       <DependentUpon>tGrades.cs</DependentUpon>
     </Compile>
+    <Compile Include="UHD_LearnDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UHD_LearnDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="PasswordPage.resx">
       <DependentUpon>PasswordPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -123,6 +128,9 @@
     <EmbeddedResource Include="TeacherPage.resx">
       <DependentUpon>TeacherPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="tGrades.resx">
+      <DependentUpon>tGrades.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -132,6 +140,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="UHD_LearnDataSet.xsc">
+      <DependentUpon>UHD_LearnDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UHD_LearnDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UHD_LearnDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UHD_LearnDataSet.xss">
+      <DependentUpon>UHD_LearnDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

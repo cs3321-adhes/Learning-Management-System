@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UHD_Learn_AT;
 
 namespace UHD_Learn
 {
@@ -122,6 +123,13 @@ namespace UHD_Learn
             tcPage.Text = courseLabel1.Text;
             this.Hide();
             tcPage.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form tgrades = new tGrades();
+            this.Hide();
+            tgrades.Show();
         }
     }
 
