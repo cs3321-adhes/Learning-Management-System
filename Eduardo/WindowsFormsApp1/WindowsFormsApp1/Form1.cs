@@ -66,5 +66,14 @@ namespace UHD_Learn
             Form grades = new grades();
             grades.Show();
         }
+
+        private void CoursesHomeBtt_Click(object sender, EventArgs e)
+        {
+            SyllabusPanel.Hide();
+            CourseConPanel.Hide();
+            AssignPanel.Hide();
+            HomePanel.Show();
+            label3.Text = "Course Home Page";
+        }
     }
 }

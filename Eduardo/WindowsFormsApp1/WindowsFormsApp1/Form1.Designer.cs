@@ -64,18 +64,42 @@
             this.label6 = new System.Windows.Forms.Label();
             this.AssignPanel = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.linkLabel8 = new System.Windows.Forms.LinkLabel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.linkLabel9 = new System.Windows.Forms.LinkLabel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.linkLabel10 = new System.Windows.Forms.LinkLabel();
+            this.CourseName = new System.Windows.Forms.TextBox();
+            this.linkLabel11 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel12 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel13 = new System.Windows.Forms.LinkLabel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.CoursesHomeBtt = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.HomePanel.SuspendLayout();
             this.SyllabusPanel.SuspendLayout();
             this.CourseConPanel.SuspendLayout();
+            this.AssignPanel.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Window;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.CoursesHomeBtt);
             this.panel1.Controls.Add(this.AssignmentBtt);
             this.panel1.Controls.Add(this.CourseConBtt);
             this.panel1.Controls.Add(this.SyllabusBtt);
@@ -87,40 +111,40 @@
             // 
             // AssignmentBtt
             // 
-            this.AssignmentBtt.Location = new System.Drawing.Point(14, 138);
+            this.AssignmentBtt.Location = new System.Drawing.Point(14, 148);
             this.AssignmentBtt.Name = "AssignmentBtt";
             this.AssignmentBtt.Size = new System.Drawing.Size(126, 30);
-            this.AssignmentBtt.TabIndex = 2;
+            this.AssignmentBtt.TabIndex = 3;
             this.AssignmentBtt.Text = "Assignments";
             this.AssignmentBtt.UseVisualStyleBackColor = true;
             this.AssignmentBtt.Click += new System.EventHandler(this.AssignmentBtt_Click);
             // 
             // CourseConBtt
             // 
-            this.CourseConBtt.Location = new System.Drawing.Point(14, 102);
+            this.CourseConBtt.Location = new System.Drawing.Point(14, 112);
             this.CourseConBtt.Name = "CourseConBtt";
             this.CourseConBtt.Size = new System.Drawing.Size(126, 30);
-            this.CourseConBtt.TabIndex = 1;
+            this.CourseConBtt.TabIndex = 2;
             this.CourseConBtt.Text = "Course Content";
             this.CourseConBtt.UseVisualStyleBackColor = true;
             this.CourseConBtt.Click += new System.EventHandler(this.CourseConBtt_Click);
             // 
             // SyllabusBtt
             // 
-            this.SyllabusBtt.Location = new System.Drawing.Point(14, 66);
+            this.SyllabusBtt.Location = new System.Drawing.Point(14, 76);
             this.SyllabusBtt.Name = "SyllabusBtt";
             this.SyllabusBtt.Size = new System.Drawing.Size(126, 30);
-            this.SyllabusBtt.TabIndex = 0;
+            this.SyllabusBtt.TabIndex = 1;
             this.SyllabusBtt.Text = "Syllabus";
             this.SyllabusBtt.UseVisualStyleBackColor = true;
             this.SyllabusBtt.Click += new System.EventHandler(this.SyllabusBtt_Click);
             // 
             // GradeBtt
             // 
-            this.GradeBtt.Location = new System.Drawing.Point(14, 174);
+            this.GradeBtt.Location = new System.Drawing.Point(14, 184);
             this.GradeBtt.Name = "GradeBtt";
             this.GradeBtt.Size = new System.Drawing.Size(126, 30);
-            this.GradeBtt.TabIndex = 2;
+            this.GradeBtt.TabIndex = 4;
             this.GradeBtt.Text = "My Grades";
             this.GradeBtt.UseVisualStyleBackColor = true;
             this.GradeBtt.Click += new System.EventHandler(this.GradeBtt_Click);
@@ -170,7 +194,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(4, 12);
+            this.label3.Location = new System.Drawing.Point(-1, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(225, 29);
             this.label3.TabIndex = 7;
@@ -182,9 +206,9 @@
             this.panel2.BackColor = System.Drawing.SystemColors.Info;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(235, 118);
+            this.panel2.Location = new System.Drawing.Point(3, 20);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(278, 52);
+            this.panel2.Size = new System.Drawing.Size(230, 35);
             this.panel2.TabIndex = 9;
             // 
             // HomePanel
@@ -419,6 +443,24 @@
             // 
             this.AssignPanel.BackColor = System.Drawing.SystemColors.Window;
             this.AssignPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.AssignPanel.Controls.Add(this.button6);
+            this.AssignPanel.Controls.Add(this.button5);
+            this.AssignPanel.Controls.Add(this.button4);
+            this.AssignPanel.Controls.Add(this.button3);
+            this.AssignPanel.Controls.Add(this.linkLabel13);
+            this.AssignPanel.Controls.Add(this.linkLabel12);
+            this.AssignPanel.Controls.Add(this.linkLabel11);
+            this.AssignPanel.Controls.Add(this.linkLabel10);
+            this.AssignPanel.Controls.Add(this.button2);
+            this.AssignPanel.Controls.Add(this.linkLabel9);
+            this.AssignPanel.Controls.Add(this.button1);
+            this.AssignPanel.Controls.Add(this.linkLabel8);
+            this.AssignPanel.Controls.Add(this.label18);
+            this.AssignPanel.Controls.Add(this.label17);
+            this.AssignPanel.Controls.Add(this.label16);
+            this.AssignPanel.Controls.Add(this.label15);
+            this.AssignPanel.Controls.Add(this.label14);
+            this.AssignPanel.Controls.Add(this.label13);
             this.AssignPanel.Location = new System.Drawing.Point(235, 187);
             this.AssignPanel.Name = "AssignPanel";
             this.AssignPanel.Size = new System.Drawing.Size(749, 360);
@@ -435,8 +477,205 @@
             this.panel3.ForeColor = System.Drawing.Color.White;
             this.panel3.Location = new System.Drawing.Point(12, 20);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(982, 92);
+            this.panel3.Size = new System.Drawing.Size(972, 92);
             this.panel3.TabIndex = 14;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(40, 16);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(74, 13);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Homework #1";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(39, 71);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(74, 13);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "Homework #2";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(39, 133);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(89, 13);
+            this.label15.TabIndex = 2;
+            this.label15.Text = "Midterm Exam #1";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(39, 192);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(89, 13);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "Midterm Exam #2";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(39, 254);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(65, 13);
+            this.label17.TabIndex = 4;
+            this.label17.Text = "Final Project";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(40, 304);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(58, 13);
+            this.label18.TabIndex = 5;
+            this.label18.Text = "Final Exam";
+            // 
+            // linkLabel8
+            // 
+            this.linkLabel8.AutoSize = true;
+            this.linkLabel8.Location = new System.Drawing.Point(59, 38);
+            this.linkLabel8.Name = "linkLabel8";
+            this.linkLabel8.Size = new System.Drawing.Size(91, 13);
+            this.linkLabel8.TabIndex = 6;
+            this.linkLabel8.TabStop = true;
+            this.linkLabel8.Text = "HW#1 Document";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(646, 23);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 28);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Submit";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // linkLabel9
+            // 
+            this.linkLabel9.AutoSize = true;
+            this.linkLabel9.Location = new System.Drawing.Point(60, 90);
+            this.linkLabel9.Name = "linkLabel9";
+            this.linkLabel9.Size = new System.Drawing.Size(91, 13);
+            this.linkLabel9.TabIndex = 8;
+            this.linkLabel9.TabStop = true;
+            this.linkLabel9.Text = "HW#2 Document";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(646, 77);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 26);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Submit";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // linkLabel10
+            // 
+            this.linkLabel10.AutoSize = true;
+            this.linkLabel10.Location = new System.Drawing.Point(59, 156);
+            this.linkLabel10.Name = "linkLabel10";
+            this.linkLabel10.Size = new System.Drawing.Size(50, 13);
+            this.linkLabel10.TabIndex = 10;
+            this.linkLabel10.TabStop = true;
+            this.linkLabel10.Text = "Midterm1";
+            // 
+            // CourseName
+            // 
+            this.CourseName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CourseName.Location = new System.Drawing.Point(258, 29);
+            this.CourseName.Name = "CourseName";
+            this.CourseName.Size = new System.Drawing.Size(705, 26);
+            this.CourseName.TabIndex = 15;
+            this.CourseName.Text = "Course Name";
+            // 
+            // linkLabel11
+            // 
+            this.linkLabel11.AutoSize = true;
+            this.linkLabel11.Location = new System.Drawing.Point(59, 216);
+            this.linkLabel11.Name = "linkLabel11";
+            this.linkLabel11.Size = new System.Drawing.Size(53, 13);
+            this.linkLabel11.TabIndex = 11;
+            this.linkLabel11.TabStop = true;
+            this.linkLabel11.Text = "Midterm 2";
+            // 
+            // linkLabel12
+            // 
+            this.linkLabel12.AutoSize = true;
+            this.linkLabel12.Location = new System.Drawing.Point(59, 276);
+            this.linkLabel12.Name = "linkLabel12";
+            this.linkLabel12.Size = new System.Drawing.Size(117, 13);
+            this.linkLabel12.TabIndex = 12;
+            this.linkLabel12.TabStop = true;
+            this.linkLabel12.Text = "Final Project Document";
+            // 
+            // linkLabel13
+            // 
+            this.linkLabel13.AutoSize = true;
+            this.linkLabel13.Location = new System.Drawing.Point(59, 326);
+            this.linkLabel13.Name = "linkLabel13";
+            this.linkLabel13.Size = new System.Drawing.Size(58, 13);
+            this.linkLabel13.TabIndex = 13;
+            this.linkLabel13.TabStop = true;
+            this.linkLabel13.Text = "Final Exam";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(646, 146);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "Submit";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(646, 206);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 15;
+            this.button4.Text = "Submit";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(646, 266);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 16;
+            this.button5.Text = "Submit";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(646, 316);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 17;
+            this.button6.Text = "Submit";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // CoursesHomeBtt
+            // 
+            this.CoursesHomeBtt.Location = new System.Drawing.Point(14, 40);
+            this.CoursesHomeBtt.Name = "CoursesHomeBtt";
+            this.CoursesHomeBtt.Size = new System.Drawing.Size(126, 30);
+            this.CoursesHomeBtt.TabIndex = 0;
+            this.CoursesHomeBtt.Text = "Course Home Page";
+            this.CoursesHomeBtt.UseVisualStyleBackColor = true;
+            this.CoursesHomeBtt.Click += new System.EventHandler(this.CoursesHomeBtt_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel4.Controls.Add(this.CourseName);
+            this.panel4.Controls.Add(this.panel2);
+            this.panel4.Location = new System.Drawing.Point(11, 118);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(973, 63);
+            this.panel4.TabIndex = 16;
             // 
             // Form1
             // 
@@ -444,12 +683,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1002, 590);
             this.Controls.Add(this.HomePanel);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.CourseConPanel);
             this.Controls.Add(this.SyllabusPanel);
-            this.Controls.Add(this.AssignPanel);
             this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.AssignPanel);
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
@@ -461,8 +700,12 @@
             this.SyllabusPanel.PerformLayout();
             this.CourseConPanel.ResumeLayout(false);
             this.CourseConPanel.PerformLayout();
+            this.AssignPanel.ResumeLayout(false);
+            this.AssignPanel.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -504,6 +747,27 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel AssignPanel;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.LinkLabel linkLabel10;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.LinkLabel linkLabel9;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.LinkLabel linkLabel8;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox CourseName;
+        private System.Windows.Forms.Button CoursesHomeBtt;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.LinkLabel linkLabel13;
+        private System.Windows.Forms.LinkLabel linkLabel12;
+        private System.Windows.Forms.LinkLabel linkLabel11;
+        private System.Windows.Forms.Panel panel4;
     }
 }
 
