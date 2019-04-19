@@ -68,12 +68,16 @@
             this.label8 = new System.Windows.Forms.Label();
             this.StudentsPanel = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SyllabusPanel.SuspendLayout();
             this.HomePanel.SuspendLayout();
             this.CourseConPanel.SuspendLayout();
             this.AssignmentsPanel.SuspendLayout();
             this.AnnouncementsPanel.SuspendLayout();
+            this.StudentsPanel.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,7 +100,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(126, 30);
             this.button3.TabIndex = 5;
-            this.button3.Text = "GPA Calculator";
+            this.button3.Text = "Grades";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // SyllabusBttn
@@ -161,9 +165,9 @@
             // 
             // LogOutBtt
             // 
-            this.LogOutBtt.Location = new System.Drawing.Point(865, 17);
+            this.LogOutBtt.Location = new System.Drawing.Point(865, 20);
             this.LogOutBtt.Name = "LogOutBtt";
-            this.LogOutBtt.Size = new System.Drawing.Size(75, 40);
+            this.LogOutBtt.Size = new System.Drawing.Size(75, 34);
             this.LogOutBtt.TabIndex = 6;
             this.LogOutBtt.Text = "Log Out";
             this.LogOutBtt.UseVisualStyleBackColor = true;
@@ -183,6 +187,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.Controls.Add(this.textBox2);
             this.panel2.Location = new System.Drawing.Point(11, 105);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(973, 65);
@@ -469,6 +474,7 @@
             // StudentsPanel
             // 
             this.StudentsPanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.StudentsPanel.Controls.Add(this.listBox1);
             this.StudentsPanel.Location = new System.Drawing.Point(234, 188);
             this.StudentsPanel.Name = "StudentsPanel";
             this.StudentsPanel.Size = new System.Drawing.Size(743, 363);
@@ -485,6 +491,23 @@
             this.panel3.Size = new System.Drawing.Size(953, 75);
             this.panel3.TabIndex = 18;
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(55, 50);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(205, 212);
+            this.listBox1.TabIndex = 0;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(190, 14);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(639, 34);
+            this.textBox2.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -494,16 +517,18 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.HomeBtt);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.HomePanel);
-            this.Controls.Add(this.AnnouncementsPanel);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.AssignmentsPanel);
-            this.Controls.Add(this.CourseConPanel);
             this.Controls.Add(this.StudentsPanel);
             this.Controls.Add(this.SyllabusPanel);
+            this.Controls.Add(this.HomePanel);
+            this.Controls.Add(this.AnnouncementsPanel);
+            this.Controls.Add(this.AssignmentsPanel);
+            this.Controls.Add(this.CourseConPanel);
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.SyllabusPanel.ResumeLayout(false);
             this.SyllabusPanel.PerformLayout();
             this.HomePanel.ResumeLayout(false);
@@ -514,6 +539,7 @@
             this.AssignmentsPanel.PerformLayout();
             this.AnnouncementsPanel.ResumeLayout(false);
             this.AnnouncementsPanel.PerformLayout();
+            this.StudentsPanel.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -561,6 +587,8 @@
         private System.Windows.Forms.LinkLabel linkLabel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
