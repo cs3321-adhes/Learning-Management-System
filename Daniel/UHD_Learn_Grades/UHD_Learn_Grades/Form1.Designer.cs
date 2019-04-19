@@ -1,4 +1,4 @@
-﻿namespace UHD_Learn_Grades
+﻿namespace UHD_Learn
 {
     partial class Form1
     {
@@ -36,6 +36,19 @@
             this.Course1btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.LabAsg1 = new System.Windows.Forms.Label();
+            this.TotalGradetxt = new System.Windows.Forms.TextBox();
+            this.Midterm2Gradetxt = new System.Windows.Forms.TextBox();
+            this.Hw3Gradetxt = new System.Windows.Forms.TextBox();
+            this.Midterm1Gradetxt = new System.Windows.Forms.TextBox();
+            this.Hw2Gradetxt = new System.Windows.Forms.TextBox();
+            this.Hw1Gradetxt = new System.Windows.Forms.TextBox();
+            this.TotalGradelbl = new System.Windows.Forms.Label();
+            this.Midterm2lbl = new System.Windows.Forms.Label();
+            this.Midterm1lbl = new System.Windows.Forms.Label();
+            this.Hw3lbl = new System.Windows.Forms.Label();
+            this.Hw2lbl = new System.Windows.Forms.Label();
+            this.Hw1lbl = new System.Windows.Forms.Label();
             this.Gradeslbl = new System.Windows.Forms.Label();
             this.DueDatelbl = new System.Windows.Forms.Label();
             this.Itemlbl = new System.Windows.Forms.Label();
@@ -45,18 +58,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.Hw1lbl = new System.Windows.Forms.Label();
-            this.Hw2lbl = new System.Windows.Forms.Label();
-            this.Hw3lbl = new System.Windows.Forms.Label();
-            this.Midterm1lbl = new System.Windows.Forms.Label();
-            this.Midterm2lbl = new System.Windows.Forms.Label();
-            this.TotalGradelbl = new System.Windows.Forms.Label();
-            this.Hw1Gradetxt = new System.Windows.Forms.TextBox();
-            this.Hw2Gradetxt = new System.Windows.Forms.TextBox();
-            this.Hw3Gradetxt = new System.Windows.Forms.TextBox();
-            this.Midterm1Gradetxt = new System.Windows.Forms.TextBox();
-            this.Midterm2Gradetxt = new System.Windows.Forms.TextBox();
-            this.TotalGradetxt = new System.Windows.Forms.TextBox();
+            this.LabAss2 = new System.Windows.Forms.Label();
+            this.dueDate1 = new System.Windows.Forms.Label();
+            this.dueDate2 = new System.Windows.Forms.Label();
+            this.dueDate3 = new System.Windows.Forms.Label();
+            this.dueDate4 = new System.Windows.Forms.Label();
+            this.dueDate5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -129,6 +136,13 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.dueDate5);
+            this.panel2.Controls.Add(this.dueDate4);
+            this.panel2.Controls.Add(this.dueDate3);
+            this.panel2.Controls.Add(this.dueDate2);
+            this.panel2.Controls.Add(this.dueDate1);
+            this.panel2.Controls.Add(this.LabAss2);
+            this.panel2.Controls.Add(this.LabAsg1);
             this.panel2.Controls.Add(this.TotalGradetxt);
             this.panel2.Controls.Add(this.Midterm2Gradetxt);
             this.panel2.Controls.Add(this.Hw3Gradetxt);
@@ -148,6 +162,137 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(514, 335);
             this.panel2.TabIndex = 2;
+            // 
+            // LabAsg1
+            // 
+            this.LabAsg1.AutoSize = true;
+            this.LabAsg1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabAsg1.Location = new System.Drawing.Point(13, 62);
+            this.LabAsg1.Name = "LabAsg1";
+            this.LabAsg1.Size = new System.Drawing.Size(137, 20);
+            this.LabAsg1.TabIndex = 15;
+            this.LabAsg1.Text = "Lab Assignment 1";
+            this.LabAsg1.Visible = false;
+            // 
+            // TotalGradetxt
+            // 
+            this.TotalGradetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalGradetxt.Location = new System.Drawing.Point(416, 292);
+            this.TotalGradetxt.Name = "TotalGradetxt";
+            this.TotalGradetxt.Size = new System.Drawing.Size(76, 26);
+            this.TotalGradetxt.TabIndex = 14;
+            this.TotalGradetxt.Visible = false;
+            // 
+            // Midterm2Gradetxt
+            // 
+            this.Midterm2Gradetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Midterm2Gradetxt.Location = new System.Drawing.Point(416, 221);
+            this.Midterm2Gradetxt.Name = "Midterm2Gradetxt";
+            this.Midterm2Gradetxt.Size = new System.Drawing.Size(76, 26);
+            this.Midterm2Gradetxt.TabIndex = 13;
+            this.Midterm2Gradetxt.Visible = false;
+            // 
+            // Hw3Gradetxt
+            // 
+            this.Hw3Gradetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hw3Gradetxt.Location = new System.Drawing.Point(416, 183);
+            this.Hw3Gradetxt.Name = "Hw3Gradetxt";
+            this.Hw3Gradetxt.Size = new System.Drawing.Size(76, 26);
+            this.Hw3Gradetxt.TabIndex = 12;
+            this.Hw3Gradetxt.Visible = false;
+            // 
+            // Midterm1Gradetxt
+            // 
+            this.Midterm1Gradetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Midterm1Gradetxt.Location = new System.Drawing.Point(416, 140);
+            this.Midterm1Gradetxt.Name = "Midterm1Gradetxt";
+            this.Midterm1Gradetxt.Size = new System.Drawing.Size(76, 26);
+            this.Midterm1Gradetxt.TabIndex = 11;
+            this.Midterm1Gradetxt.Visible = false;
+            // 
+            // Hw2Gradetxt
+            // 
+            this.Hw2Gradetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hw2Gradetxt.Location = new System.Drawing.Point(416, 96);
+            this.Hw2Gradetxt.Name = "Hw2Gradetxt";
+            this.Hw2Gradetxt.Size = new System.Drawing.Size(76, 26);
+            this.Hw2Gradetxt.TabIndex = 10;
+            this.Hw2Gradetxt.Visible = false;
+            // 
+            // Hw1Gradetxt
+            // 
+            this.Hw1Gradetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hw1Gradetxt.Location = new System.Drawing.Point(416, 56);
+            this.Hw1Gradetxt.Name = "Hw1Gradetxt";
+            this.Hw1Gradetxt.Size = new System.Drawing.Size(76, 26);
+            this.Hw1Gradetxt.TabIndex = 9;
+            this.Hw1Gradetxt.Visible = false;
+            // 
+            // TotalGradelbl
+            // 
+            this.TotalGradelbl.AutoSize = true;
+            this.TotalGradelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalGradelbl.Location = new System.Drawing.Point(13, 298);
+            this.TotalGradelbl.Name = "TotalGradelbl";
+            this.TotalGradelbl.Size = new System.Drawing.Size(93, 20);
+            this.TotalGradelbl.TabIndex = 8;
+            this.TotalGradelbl.Text = "Total Grade";
+            this.TotalGradelbl.Visible = false;
+            // 
+            // Midterm2lbl
+            // 
+            this.Midterm2lbl.AutoSize = true;
+            this.Midterm2lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Midterm2lbl.Location = new System.Drawing.Point(13, 224);
+            this.Midterm2lbl.Name = "Midterm2lbl";
+            this.Midterm2lbl.Size = new System.Drawing.Size(123, 20);
+            this.Midterm2lbl.TabIndex = 7;
+            this.Midterm2lbl.Text = "Midterm Exam 2";
+            this.Midterm2lbl.Visible = false;
+            // 
+            // Midterm1lbl
+            // 
+            this.Midterm1lbl.AutoSize = true;
+            this.Midterm1lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Midterm1lbl.Location = new System.Drawing.Point(13, 146);
+            this.Midterm1lbl.Name = "Midterm1lbl";
+            this.Midterm1lbl.Size = new System.Drawing.Size(123, 20);
+            this.Midterm1lbl.TabIndex = 6;
+            this.Midterm1lbl.Text = "Midterm Exam 1";
+            this.Midterm1lbl.Visible = false;
+            // 
+            // Hw3lbl
+            // 
+            this.Hw3lbl.AutoSize = true;
+            this.Hw3lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hw3lbl.Location = new System.Drawing.Point(13, 189);
+            this.Hw3lbl.Name = "Hw3lbl";
+            this.Hw3lbl.Size = new System.Drawing.Size(98, 20);
+            this.Hw3lbl.TabIndex = 5;
+            this.Hw3lbl.Text = "Homework 3";
+            this.Hw3lbl.Visible = false;
+            // 
+            // Hw2lbl
+            // 
+            this.Hw2lbl.AutoSize = true;
+            this.Hw2lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hw2lbl.Location = new System.Drawing.Point(13, 102);
+            this.Hw2lbl.Name = "Hw2lbl";
+            this.Hw2lbl.Size = new System.Drawing.Size(98, 20);
+            this.Hw2lbl.TabIndex = 4;
+            this.Hw2lbl.Text = "Homework 2";
+            this.Hw2lbl.Visible = false;
+            // 
+            // Hw1lbl
+            // 
+            this.Hw1lbl.AutoSize = true;
+            this.Hw1lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hw1lbl.Location = new System.Drawing.Point(13, 62);
+            this.Hw1lbl.Name = "Hw1lbl";
+            this.Hw1lbl.Size = new System.Drawing.Size(98, 20);
+            this.Hw1lbl.TabIndex = 3;
+            this.Hw1lbl.Text = "Homework 1";
+            this.Hw1lbl.Visible = false;
             // 
             // Gradeslbl
             // 
@@ -241,125 +386,71 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "Home Page";
             // 
-            // Hw1lbl
+            // LabAss2
             // 
-            this.Hw1lbl.AutoSize = true;
-            this.Hw1lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hw1lbl.Location = new System.Drawing.Point(13, 62);
-            this.Hw1lbl.Name = "Hw1lbl";
-            this.Hw1lbl.Size = new System.Drawing.Size(98, 20);
-            this.Hw1lbl.TabIndex = 3;
-            this.Hw1lbl.Text = "Homework 1";
-            this.Hw1lbl.Visible = false;
+            this.LabAss2.AutoSize = true;
+            this.LabAss2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabAss2.Location = new System.Drawing.Point(13, 189);
+            this.LabAss2.Name = "LabAss2";
+            this.LabAss2.Size = new System.Drawing.Size(137, 20);
+            this.LabAss2.TabIndex = 16;
+            this.LabAss2.Text = "Lab Assignment 2";
+            this.LabAss2.Visible = false;
             // 
-            // Hw2lbl
+            // dueDate1
             // 
-            this.Hw2lbl.AutoSize = true;
-            this.Hw2lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hw2lbl.Location = new System.Drawing.Point(13, 102);
-            this.Hw2lbl.Name = "Hw2lbl";
-            this.Hw2lbl.Size = new System.Drawing.Size(98, 20);
-            this.Hw2lbl.TabIndex = 4;
-            this.Hw2lbl.Text = "Homework 2";
-            this.Hw2lbl.Visible = false;
+            this.dueDate1.AutoSize = true;
+            this.dueDate1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dueDate1.Location = new System.Drawing.Point(208, 62);
+            this.dueDate1.Name = "dueDate1";
+            this.dueDate1.Size = new System.Drawing.Size(105, 20);
+            this.dueDate1.TabIndex = 17;
+            this.dueDate1.Text = "JAN, 23 2019";
+            this.dueDate1.Visible = false;
             // 
-            // Hw3lbl
+            // dueDate2
             // 
-            this.Hw3lbl.AutoSize = true;
-            this.Hw3lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hw3lbl.Location = new System.Drawing.Point(13, 189);
-            this.Hw3lbl.Name = "Hw3lbl";
-            this.Hw3lbl.Size = new System.Drawing.Size(98, 20);
-            this.Hw3lbl.TabIndex = 5;
-            this.Hw3lbl.Text = "Homework 3";
-            this.Hw3lbl.Visible = false;
+            this.dueDate2.AutoSize = true;
+            this.dueDate2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dueDate2.Location = new System.Drawing.Point(208, 102);
+            this.dueDate2.Name = "dueDate2";
+            this.dueDate2.Size = new System.Drawing.Size(107, 20);
+            this.dueDate2.TabIndex = 18;
+            this.dueDate2.Text = "FEB, 06 2019";
+            this.dueDate2.Visible = false;
             // 
-            // Midterm1lbl
+            // dueDate3
             // 
-            this.Midterm1lbl.AutoSize = true;
-            this.Midterm1lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Midterm1lbl.Location = new System.Drawing.Point(13, 146);
-            this.Midterm1lbl.Name = "Midterm1lbl";
-            this.Midterm1lbl.Size = new System.Drawing.Size(123, 20);
-            this.Midterm1lbl.TabIndex = 6;
-            this.Midterm1lbl.Text = "Midterm Exam 1";
-            this.Midterm1lbl.Visible = false;
+            this.dueDate3.AutoSize = true;
+            this.dueDate3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dueDate3.Location = new System.Drawing.Point(208, 146);
+            this.dueDate3.Name = "dueDate3";
+            this.dueDate3.Size = new System.Drawing.Size(107, 20);
+            this.dueDate3.TabIndex = 19;
+            this.dueDate3.Text = "FEB, 14 2019";
+            this.dueDate3.Visible = false;
             // 
-            // Midterm2lbl
+            // dueDate4
             // 
-            this.Midterm2lbl.AutoSize = true;
-            this.Midterm2lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Midterm2lbl.Location = new System.Drawing.Point(13, 224);
-            this.Midterm2lbl.Name = "Midterm2lbl";
-            this.Midterm2lbl.Size = new System.Drawing.Size(123, 20);
-            this.Midterm2lbl.TabIndex = 7;
-            this.Midterm2lbl.Text = "Midterm Exam 2";
-            this.Midterm2lbl.Visible = false;
+            this.dueDate4.AutoSize = true;
+            this.dueDate4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dueDate4.Location = new System.Drawing.Point(208, 189);
+            this.dueDate4.Name = "dueDate4";
+            this.dueDate4.Size = new System.Drawing.Size(111, 20);
+            this.dueDate4.TabIndex = 20;
+            this.dueDate4.Text = "MAR, 03 2019";
+            this.dueDate4.Visible = false;
             // 
-            // TotalGradelbl
+            // dueDate5
             // 
-            this.TotalGradelbl.AutoSize = true;
-            this.TotalGradelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalGradelbl.Location = new System.Drawing.Point(13, 298);
-            this.TotalGradelbl.Name = "TotalGradelbl";
-            this.TotalGradelbl.Size = new System.Drawing.Size(93, 20);
-            this.TotalGradelbl.TabIndex = 8;
-            this.TotalGradelbl.Text = "Total Grade";
-            this.TotalGradelbl.Visible = false;
-            // 
-            // Hw1Gradetxt
-            // 
-            this.Hw1Gradetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hw1Gradetxt.Location = new System.Drawing.Point(416, 56);
-            this.Hw1Gradetxt.Name = "Hw1Gradetxt";
-            this.Hw1Gradetxt.Size = new System.Drawing.Size(76, 26);
-            this.Hw1Gradetxt.TabIndex = 9;
-            this.Hw1Gradetxt.Visible = false;
-            // 
-            // Hw2Gradetxt
-            // 
-            this.Hw2Gradetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hw2Gradetxt.Location = new System.Drawing.Point(416, 96);
-            this.Hw2Gradetxt.Name = "Hw2Gradetxt";
-            this.Hw2Gradetxt.Size = new System.Drawing.Size(76, 26);
-            this.Hw2Gradetxt.TabIndex = 10;
-            this.Hw2Gradetxt.Visible = false;
-            // 
-            // Hw3Gradetxt
-            // 
-            this.Hw3Gradetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hw3Gradetxt.Location = new System.Drawing.Point(416, 183);
-            this.Hw3Gradetxt.Name = "Hw3Gradetxt";
-            this.Hw3Gradetxt.Size = new System.Drawing.Size(76, 26);
-            this.Hw3Gradetxt.TabIndex = 12;
-            this.Hw3Gradetxt.Visible = false;
-            // 
-            // Midterm1Gradetxt
-            // 
-            this.Midterm1Gradetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Midterm1Gradetxt.Location = new System.Drawing.Point(416, 140);
-            this.Midterm1Gradetxt.Name = "Midterm1Gradetxt";
-            this.Midterm1Gradetxt.Size = new System.Drawing.Size(76, 26);
-            this.Midterm1Gradetxt.TabIndex = 11;
-            this.Midterm1Gradetxt.Visible = false;
-            // 
-            // Midterm2Gradetxt
-            // 
-            this.Midterm2Gradetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Midterm2Gradetxt.Location = new System.Drawing.Point(416, 221);
-            this.Midterm2Gradetxt.Name = "Midterm2Gradetxt";
-            this.Midterm2Gradetxt.Size = new System.Drawing.Size(76, 26);
-            this.Midterm2Gradetxt.TabIndex = 13;
-            this.Midterm2Gradetxt.Visible = false;
-            // 
-            // TotalGradetxt
-            // 
-            this.TotalGradetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalGradetxt.Location = new System.Drawing.Point(416, 292);
-            this.TotalGradetxt.Name = "TotalGradetxt";
-            this.TotalGradetxt.Size = new System.Drawing.Size(76, 26);
-            this.TotalGradetxt.TabIndex = 14;
-            this.TotalGradetxt.Visible = false;
+            this.dueDate5.AutoSize = true;
+            this.dueDate5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dueDate5.Location = new System.Drawing.Point(208, 224);
+            this.dueDate5.Name = "dueDate5";
+            this.dueDate5.Size = new System.Drawing.Size(111, 20);
+            this.dueDate5.TabIndex = 21;
+            this.dueDate5.Text = "MAR, 30 2019";
+            this.dueDate5.Visible = false;
             // 
             // Form1
             // 
@@ -415,6 +506,13 @@
         private System.Windows.Forms.TextBox Midterm1Gradetxt;
         private System.Windows.Forms.TextBox Hw2Gradetxt;
         private System.Windows.Forms.TextBox Hw1Gradetxt;
+        private System.Windows.Forms.Label LabAsg1;
+        private System.Windows.Forms.Label LabAss2;
+        private System.Windows.Forms.Label dueDate5;
+        private System.Windows.Forms.Label dueDate4;
+        private System.Windows.Forms.Label dueDate3;
+        private System.Windows.Forms.Label dueDate2;
+        private System.Windows.Forms.Label dueDate1;
     }
 }
 

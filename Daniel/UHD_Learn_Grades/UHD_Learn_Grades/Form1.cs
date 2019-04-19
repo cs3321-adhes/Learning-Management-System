@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UHD_Learn_Grades
+namespace UHD_Learn
 {
     public partial class Form1 : Form
     {
@@ -25,8 +25,10 @@ namespace UHD_Learn_Grades
             Itemlbl.Show();
             DueDatelbl.Show();
             Gradeslbl.Show();
+            LabAsg1.Hide();
             Hw1lbl.Show();
             Hw2lbl.Show();
+            LabAss2.Hide();
             Hw3lbl.Show();
             Midterm1lbl.Show();
             Midterm2lbl.Show();
@@ -37,6 +39,11 @@ namespace UHD_Learn_Grades
             Midterm1Gradetxt.Show();
             Midterm2Gradetxt.Show();
             TotalGradetxt.Show();
+            dueDate1.Show();
+            dueDate2.Show();
+            dueDate3.Show();
+            dueDate4.Show();
+            dueDate5.Show();
         }
 
         private void Course3btn_Click(object sender, EventArgs e)
@@ -47,9 +54,13 @@ namespace UHD_Learn_Grades
             Itemlbl.Show();
             DueDatelbl.Show();
             Gradeslbl.Show();
-            Hw1lbl.Show();
+            //Hw1lbl.Show();
+            Hw1lbl.Hide();
+            LabAsg1.Show();
             Hw2lbl.Show();
-            Hw3lbl.Show();
+            Hw3lbl.Hide();
+            LabAss2.Show();
+            //Hw3lbl.Show();
             Midterm1lbl.Show();
             Midterm2lbl.Show();
             TotalGradelbl.Show();
