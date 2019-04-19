@@ -36,6 +36,9 @@
             this.Course1btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.FinalExamtxt = new System.Windows.Forms.TextBox();
+            this.dueDate6 = new System.Windows.Forms.Label();
+            this.finalExamlbl = new System.Windows.Forms.Label();
             this.dueDate5 = new System.Windows.Forms.Label();
             this.dueDate4 = new System.Windows.Forms.Label();
             this.dueDate3 = new System.Windows.Forms.Label();
@@ -58,16 +61,15 @@
             this.Itemlbl = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.CourseInfotxt = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.finalExamlbl = new System.Windows.Forms.Label();
-            this.dueDate6 = new System.Windows.Forms.Label();
-            this.FinalExamtxt = new System.Windows.Forms.TextBox();
+            this.LogOutbtn = new System.Windows.Forms.Button();
+            this.Namelbl = new System.Windows.Forms.Label();
+            this.HomePagebtn = new System.Windows.Forms.Button();
+            this.HomePagelbl = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -79,7 +81,7 @@
             this.panel1.Controls.Add(this.Course1btn);
             this.panel1.Location = new System.Drawing.Point(26, 128);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(254, 335);
+            this.panel1.Size = new System.Drawing.Size(254, 358);
             this.panel1.TabIndex = 0;
             // 
             // Course4btn
@@ -166,6 +168,37 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(514, 358);
             this.panel2.TabIndex = 2;
+            // 
+            // FinalExamtxt
+            // 
+            this.FinalExamtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FinalExamtxt.Location = new System.Drawing.Point(416, 255);
+            this.FinalExamtxt.Name = "FinalExamtxt";
+            this.FinalExamtxt.Size = new System.Drawing.Size(76, 26);
+            this.FinalExamtxt.TabIndex = 24;
+            this.FinalExamtxt.Visible = false;
+            // 
+            // dueDate6
+            // 
+            this.dueDate6.AutoSize = true;
+            this.dueDate6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dueDate6.Location = new System.Drawing.Point(208, 261);
+            this.dueDate6.Name = "dueDate6";
+            this.dueDate6.Size = new System.Drawing.Size(101, 20);
+            this.dueDate6.TabIndex = 23;
+            this.dueDate6.Text = "MAY, 5 2019";
+            this.dueDate6.Visible = false;
+            // 
+            // finalExamlbl
+            // 
+            this.finalExamlbl.AutoSize = true;
+            this.finalExamlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finalExamlbl.Location = new System.Drawing.Point(15, 261);
+            this.finalExamlbl.Name = "finalExamlbl";
+            this.finalExamlbl.Size = new System.Drawing.Size(87, 20);
+            this.finalExamlbl.TabIndex = 22;
+            this.finalExamlbl.Text = "Final Exam";
+            this.finalExamlbl.Visible = false;
             // 
             // dueDate5
             // 
@@ -389,91 +422,73 @@
             // 
             this.CourseInfotxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CourseInfotxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CourseInfotxt.Location = new System.Drawing.Point(269, 7);
+            this.CourseInfotxt.Location = new System.Drawing.Point(268, 7);
             this.CourseInfotxt.Name = "CourseInfotxt";
             this.CourseInfotxt.Size = new System.Drawing.Size(509, 29);
             this.CourseInfotxt.TabIndex = 2;
             this.CourseInfotxt.Visible = false;
             // 
-            // button5
+            // LogOutbtn
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(734, 17);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 30);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Log Out";
-            this.button5.UseVisualStyleBackColor = true;
+            this.LogOutbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogOutbtn.Location = new System.Drawing.Point(704, 14);
+            this.LogOutbtn.Name = "LogOutbtn";
+            this.LogOutbtn.Size = new System.Drawing.Size(75, 30);
+            this.LogOutbtn.TabIndex = 4;
+            this.LogOutbtn.Text = "Log Out";
+            this.LogOutbtn.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // Namelbl
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(635, 31);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 16);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Daniel Fabela";
+            this.Namelbl.AutoSize = true;
+            this.Namelbl.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Namelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Namelbl.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Namelbl.Location = new System.Drawing.Point(605, 28);
+            this.Namelbl.Name = "Namelbl";
+            this.Namelbl.Size = new System.Drawing.Size(93, 16);
+            this.Namelbl.TabIndex = 5;
+            this.Namelbl.Text = "Daniel Fabela";
             // 
-            // button6
+            // HomePagebtn
             // 
-            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
-            this.button6.Location = new System.Drawing.Point(26, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(63, 57);
-            this.button6.TabIndex = 6;
-            this.button6.UseVisualStyleBackColor = true;
+            this.HomePagebtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HomePagebtn.BackgroundImage")));
+            this.HomePagebtn.Location = new System.Drawing.Point(8, 0);
+            this.HomePagebtn.Name = "HomePagebtn";
+            this.HomePagebtn.Size = new System.Drawing.Size(63, 57);
+            this.HomePagebtn.TabIndex = 6;
+            this.HomePagebtn.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // HomePagelbl
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(95, 17);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(93, 20);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Home Page";
+            this.HomePagelbl.AutoSize = true;
+            this.HomePagelbl.BackColor = System.Drawing.SystemColors.ControlText;
+            this.HomePagelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomePagelbl.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.HomePagelbl.Location = new System.Drawing.Point(77, 24);
+            this.HomePagelbl.Name = "HomePagelbl";
+            this.HomePagelbl.Size = new System.Drawing.Size(93, 20);
+            this.HomePagelbl.TabIndex = 7;
+            this.HomePagelbl.Text = "Home Page";
             // 
-            // finalExamlbl
+            // panel4
             // 
-            this.finalExamlbl.AutoSize = true;
-            this.finalExamlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.finalExamlbl.Location = new System.Drawing.Point(15, 261);
-            this.finalExamlbl.Name = "finalExamlbl";
-            this.finalExamlbl.Size = new System.Drawing.Size(87, 20);
-            this.finalExamlbl.TabIndex = 22;
-            this.finalExamlbl.Text = "Final Exam";
-            this.finalExamlbl.Visible = false;
-            // 
-            // dueDate6
-            // 
-            this.dueDate6.AutoSize = true;
-            this.dueDate6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dueDate6.Location = new System.Drawing.Point(208, 261);
-            this.dueDate6.Name = "dueDate6";
-            this.dueDate6.Size = new System.Drawing.Size(101, 20);
-            this.dueDate6.TabIndex = 23;
-            this.dueDate6.Text = "MAY, 5 2019";
-            this.dueDate6.Visible = false;
-            // 
-            // FinalExamtxt
-            // 
-            this.FinalExamtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FinalExamtxt.Location = new System.Drawing.Point(416, 255);
-            this.FinalExamtxt.Name = "FinalExamtxt";
-            this.FinalExamtxt.Size = new System.Drawing.Size(76, 26);
-            this.FinalExamtxt.TabIndex = 24;
-            this.FinalExamtxt.Visible = false;
+            this.panel4.BackColor = System.Drawing.SystemColors.ControlText;
+            this.panel4.Controls.Add(this.HomePagebtn);
+            this.panel4.Controls.Add(this.Namelbl);
+            this.panel4.Controls.Add(this.LogOutbtn);
+            this.panel4.Controls.Add(this.HomePagelbl);
+            this.panel4.Location = new System.Drawing.Point(26, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(783, 57);
+            this.panel4.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(821, 508);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -484,8 +499,9 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -503,10 +519,10 @@
         private System.Windows.Forms.Label Itemlbl;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox CourseInfotxt;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button LogOutbtn;
+        private System.Windows.Forms.Label Namelbl;
+        private System.Windows.Forms.Button HomePagebtn;
+        private System.Windows.Forms.Label HomePagelbl;
         private System.Windows.Forms.Label TotalGradelbl;
         private System.Windows.Forms.Label Midterm2lbl;
         private System.Windows.Forms.Label Midterm1lbl;
@@ -527,6 +543,7 @@
         private System.Windows.Forms.TextBox FinalExamtxt;
         private System.Windows.Forms.Label dueDate6;
         private System.Windows.Forms.Label finalExamlbl;
+        private System.Windows.Forms.Panel panel4;
     }
 }
 
