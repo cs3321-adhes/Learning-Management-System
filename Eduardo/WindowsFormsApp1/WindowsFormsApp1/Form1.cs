@@ -21,21 +21,27 @@ namespace WindowsFormsApp1
         {
             SyllabusPanel.Hide();
             CourseConPanel.Hide();
+            AssignPanel.Hide();
             HomePanel.Show();
+            label3.Text = "Course Home Page";
         }
 
         private void SyllabusBtt_Click(object sender, EventArgs e)
         {
             HomePanel.Hide();
             CourseConPanel.Hide();
+            AssignPanel.Hide();
             SyllabusPanel.Show();
+            label3.Text = "Syllabus";
         }
 
         private void CourseConBtt_Click(object sender, EventArgs e)
         {
             SyllabusPanel.Hide();
             HomePanel.Hide();
+            AssignPanel.Hide();
             CourseConPanel.Show();
+            label3.Text = "Course Content";
         }
 
         private void AssignmentBtt_Click(object sender, EventArgs e)
@@ -43,6 +49,7 @@ namespace WindowsFormsApp1
             HomePanel.Hide();
             CourseConPanel.Hide();
             SyllabusPanel.Hide();
+            AssignPanel.Show();
             label3.Text = "Assignments";
 
 
@@ -50,7 +57,7 @@ namespace WindowsFormsApp1
 
         private void label3_Click(object sender, EventArgs e)
         {
-            label3.Text = "Another one";
+
         }
 
         private void GradeBtt_Click(object sender, EventArgs e)

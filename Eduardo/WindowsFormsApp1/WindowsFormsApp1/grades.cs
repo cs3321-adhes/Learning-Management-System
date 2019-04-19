@@ -16,5 +16,12 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void ReToMain_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form Form1 = new Form1();
+            Form1.Show();
+        }
     }
 }
