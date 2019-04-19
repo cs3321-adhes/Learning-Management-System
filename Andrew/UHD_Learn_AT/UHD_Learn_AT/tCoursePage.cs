@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UHD_Learn_AT
+namespace UHD_Learn
 {
     public partial class tCoursePage : Form
     {
@@ -19,7 +19,7 @@ namespace UHD_Learn_AT
 
         private void tCoursePage_Load(object sender, EventArgs e)
         {
-            listBox1.Text = "CS 3321 Software Engineering";
+            //listBox1.Text = "CS 3321 Software Engineering";
             
         }
 

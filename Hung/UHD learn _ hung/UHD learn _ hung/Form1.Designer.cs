@@ -1,4 +1,4 @@
-﻿namespace UHD_learn___hung
+﻿namespace UHD_Learn
 {
     partial class StudentPage
     {
