@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.AssignmentBtt = new System.Windows.Forms.Button();
             this.CourseConBtt = new System.Windows.Forms.Button();
@@ -47,26 +48,28 @@
             this.SyllabusPanel = new System.Windows.Forms.Panel();
             this.SyllaLabel = new System.Windows.Forms.LinkLabel();
             this.CourseConPanel = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
-            this.label12 = new System.Windows.Forms.Label();
             this.linkLabel7 = new System.Windows.Forms.LinkLabel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label6 = new System.Windows.Forms.Label();
             this.AssignPanel = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.HomePanel.SuspendLayout();
             this.SyllabusPanel.SuspendLayout();
             this.CourseConPanel.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -126,7 +129,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(141, 51);
+            this.label1.Location = new System.Drawing.Point(88, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 25);
             this.label1.TabIndex = 3;
@@ -134,19 +137,20 @@
             // 
             // HomeBtt
             // 
-            this.HomeBtt.Location = new System.Drawing.Point(26, 36);
+            this.HomeBtt.BackColor = System.Drawing.SystemColors.Menu;
+            this.HomeBtt.Image = ((System.Drawing.Image)(resources.GetObject("HomeBtt.Image")));
+            this.HomeBtt.Location = new System.Drawing.Point(15, 14);
             this.HomeBtt.Name = "HomeBtt";
-            this.HomeBtt.Size = new System.Drawing.Size(90, 40);
+            this.HomeBtt.Size = new System.Drawing.Size(67, 64);
             this.HomeBtt.TabIndex = 4;
-            this.HomeBtt.Text = "Home Page";
-            this.HomeBtt.UseVisualStyleBackColor = true;
+            this.HomeBtt.UseVisualStyleBackColor = false;
             this.HomeBtt.Click += new System.EventHandler(this.HomeBtt_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(740, 51);
+            this.label2.Location = new System.Drawing.Point(708, 31);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(140, 25);
             this.label2.TabIndex = 5;
@@ -154,7 +158,8 @@
             // 
             // LogOutBtt
             // 
-            this.LogOutBtt.Location = new System.Drawing.Point(910, 36);
+            this.LogOutBtt.ForeColor = System.Drawing.Color.Black;
+            this.LogOutBtt.Location = new System.Drawing.Point(879, 26);
             this.LogOutBtt.Name = "LogOutBtt";
             this.LogOutBtt.Size = new System.Drawing.Size(75, 40);
             this.LogOutBtt.TabIndex = 6;
@@ -277,109 +282,24 @@
             this.CourseConPanel.TabIndex = 12;
             this.CourseConPanel.Visible = false;
             // 
-            // label6
+            // linkLabel7
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(40, 41);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 13);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Lecture #1";
+            this.linkLabel7.AutoSize = true;
+            this.linkLabel7.Location = new System.Drawing.Point(306, 184);
+            this.linkLabel7.Name = "linkLabel7";
+            this.linkLabel7.Size = new System.Drawing.Size(92, 13);
+            this.linkLabel7.TabIndex = 13;
+            this.linkLabel7.TabStop = true;
+            this.linkLabel7.Text = "Lecture 7 Content";
             // 
-            // linkLabel1
+            // label12
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(59, 58);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(92, 13);
-            this.linkLabel1.TabIndex = 1;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Lecture 1 Content";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(40, 103);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(59, 13);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "Lecture #2";
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(59, 120);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(92, 13);
-            this.linkLabel2.TabIndex = 3;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Lecture 2 Content";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(40, 165);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 13);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Lecture #3";
-            // 
-            // linkLabel3
-            // 
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(59, 184);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(92, 13);
-            this.linkLabel3.TabIndex = 5;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "Lecture 3 Content";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(40, 232);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(59, 13);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Lecture #4";
-            // 
-            // linkLabel4
-            // 
-            this.linkLabel4.AutoSize = true;
-            this.linkLabel4.Location = new System.Drawing.Point(59, 254);
-            this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(92, 13);
-            this.linkLabel4.TabIndex = 7;
-            this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "Lecture 4 Content";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(288, 41);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(59, 13);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Lecture #5";
-            // 
-            // linkLabel5
-            // 
-            this.linkLabel5.AutoSize = true;
-            this.linkLabel5.Location = new System.Drawing.Point(306, 58);
-            this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(92, 13);
-            this.linkLabel5.TabIndex = 9;
-            this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "Lecture 5 Content";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(288, 103);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(59, 13);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "Lecture #6";
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(294, 163);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(59, 13);
+            this.label12.TabIndex = 12;
+            this.label12.Text = "Lecture #7";
             // 
             // linkLabel6
             // 
@@ -391,24 +311,109 @@
             this.linkLabel6.TabStop = true;
             this.linkLabel6.Text = "Lecture 6 Content";
             // 
-            // label12
+            // label11
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(294, 163);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(59, 13);
-            this.label12.TabIndex = 12;
-            this.label12.Text = "Lecture #7";
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(288, 103);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(59, 13);
+            this.label11.TabIndex = 10;
+            this.label11.Text = "Lecture #6";
             // 
-            // linkLabel7
+            // linkLabel5
             // 
-            this.linkLabel7.AutoSize = true;
-            this.linkLabel7.Location = new System.Drawing.Point(306, 184);
-            this.linkLabel7.Name = "linkLabel7";
-            this.linkLabel7.Size = new System.Drawing.Size(92, 13);
-            this.linkLabel7.TabIndex = 13;
-            this.linkLabel7.TabStop = true;
-            this.linkLabel7.Text = "Lecture 7 Content";
+            this.linkLabel5.AutoSize = true;
+            this.linkLabel5.Location = new System.Drawing.Point(306, 58);
+            this.linkLabel5.Name = "linkLabel5";
+            this.linkLabel5.Size = new System.Drawing.Size(92, 13);
+            this.linkLabel5.TabIndex = 9;
+            this.linkLabel5.TabStop = true;
+            this.linkLabel5.Text = "Lecture 5 Content";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(288, 41);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(59, 13);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "Lecture #5";
+            // 
+            // linkLabel4
+            // 
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.Location = new System.Drawing.Point(59, 254);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(92, 13);
+            this.linkLabel4.TabIndex = 7;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "Lecture 4 Content";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(40, 232);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(59, 13);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Lecture #4";
+            // 
+            // linkLabel3
+            // 
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.Location = new System.Drawing.Point(59, 184);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(92, 13);
+            this.linkLabel3.TabIndex = 5;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "Lecture 3 Content";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(40, 165);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(59, 13);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Lecture #3";
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Location = new System.Drawing.Point(59, 120);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(92, 13);
+            this.linkLabel2.TabIndex = 3;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Lecture 2 Content";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(40, 103);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(59, 13);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Lecture #2";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(59, 58);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(92, 13);
+            this.linkLabel1.TabIndex = 1;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Lecture 1 Content";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(40, 41);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(59, 13);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Lecture #1";
             // 
             // AssignPanel
             // 
@@ -420,6 +425,19 @@
             this.AssignPanel.TabIndex = 13;
             this.AssignPanel.Visible = false;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Controls.Add(this.LogOutBtt);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.HomeBtt);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.ForeColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(12, 20);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(982, 92);
+            this.panel3.TabIndex = 14;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -427,14 +445,11 @@
             this.ClientSize = new System.Drawing.Size(1002, 590);
             this.Controls.Add(this.HomePanel);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.LogOutBtt);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.HomeBtt);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.CourseConPanel);
             this.Controls.Add(this.SyllabusPanel);
             this.Controls.Add(this.AssignPanel);
+            this.Controls.Add(this.panel3);
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
@@ -446,8 +461,9 @@
             this.SyllabusPanel.PerformLayout();
             this.CourseConPanel.ResumeLayout(false);
             this.CourseConPanel.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -487,6 +503,7 @@
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel AssignPanel;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 
