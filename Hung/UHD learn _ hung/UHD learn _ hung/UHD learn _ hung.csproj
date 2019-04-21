@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CoursePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoursePage.designer.cs">
+      <DependentUpon>CoursePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="GPA.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +71,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CoursePage.resx">
+      <DependentUpon>CoursePage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GPA.resx">
       <DependentUpon>GPA.cs</DependentUpon>
     </EmbeddedResource>

@@ -61,3 +61,4 @@ C:\Users\keens\Documents\GitHub\Learning-Management-System\Hung\UHD learn _ hung
 C:\Users\keens\Documents\GitHub\Learning-Management-System\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD learn _ hung.exe
 C:\Users\keens\Documents\GitHub\Learning-Management-System\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD learn _ hung.pdb
 C:\Users\keens\Documents\GitHub\Learning-Management-System\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD_Learn.MyGrades.resources
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Hung\UHD learn _ hung\UHD learn _ hung\obj\Debug\UHD_Learn.CoursePage.resources

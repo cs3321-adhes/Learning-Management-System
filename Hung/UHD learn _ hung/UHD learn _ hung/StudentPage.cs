@@ -157,7 +157,10 @@ namespace UHD_Learn
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            coursepanel.Hide();
+            announcementPanel.Show();
+            welcomePanel.Hide();
+            calendarPanel.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -165,6 +168,64 @@ namespace UHD_Learn
             MyGrades mygrades = new MyGrades();
             mygrades.Show();
             this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            coursepanel.Hide();
+            welcomePanel.Hide();
+            announcementPanel.Hide();
+            calendarPanel.Hide();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            coursepanel.Show();
+            welcomePanel.Hide();
+            announcementPanel.Hide();
+            calendarPanel.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            calendarPanel.Show();
+            coursepanel.Hide();
+            welcomePanel.Hide();
+            announcementPanel.Hide();
+        }
+
+        private void HomeBtt_Click(object sender, EventArgs e)
+        {
+            StudentPage studentpage = new StudentPage();
+            studentpage.Show();
+            this.Hide();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            StudentPage studentpage = new StudentPage();
+            studentpage.Show();
+            this.Hide();
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void announcement_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

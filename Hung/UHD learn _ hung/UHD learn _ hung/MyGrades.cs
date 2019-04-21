@@ -27,16 +27,24 @@ namespace UHD_Learn
             Gradeslbl.Show();
             Hw1lbl.Show();
             Hw2lbl.Show();
-            Hw3lbl.Show();
+            finalProjectlbl.Show();
             Midterm1lbl.Show();
             Midterm2lbl.Show();
+            finalExamlbl.Show();
             TotalGradelbl.Show();
             Hw1Gradetxt.Show();
             Hw2Gradetxt.Show();
-            Hw3Gradetxt.Show();
+            MidtermGrade2txt.Show();
             Midterm1Gradetxt.Show();
-            Midterm2Gradetxt.Show();
+            FinalProjecttxt.Show();
+            FinalExamtxt.Show();
             TotalGradetxt.Show();
+            dueDate1.Show();
+            dueDate2.Show();
+            dueDate3.Show();
+            dueDate4.Show();
+            dueDate5.Show();
+            dueDate6.Show();
         }
 
         private void Course3btn_Click(object sender, EventArgs e)
@@ -49,16 +57,84 @@ namespace UHD_Learn
             Gradeslbl.Show();
             Hw1lbl.Show();
             Hw2lbl.Show();
-            Hw3lbl.Show();
+            finalProjectlbl.Show();
             Midterm1lbl.Show();
             Midterm2lbl.Show();
+            finalExamlbl.Show();
             TotalGradelbl.Show();
             Hw1Gradetxt.Show();
             Hw2Gradetxt.Show();
-            Hw3Gradetxt.Show();
+            MidtermGrade2txt.Show();
             Midterm1Gradetxt.Show();
-            Midterm2Gradetxt.Show();
+            FinalProjecttxt.Show();
+            FinalExamtxt.Show();
             TotalGradetxt.Show();
+            dueDate1.Show();
+            dueDate2.Show();
+            dueDate3.Show();
+            dueDate4.Show();
+            dueDate5.Show();
+            dueDate6.Show();
+        }
+
+        private void Course2btn_Click(object sender, EventArgs e)
+        {
+            CourseInfotxt.Clear();
+            CourseInfotxt.AppendText("CS_3300 25480: Moiz Ahmed-F 10:00-12:45 pm");
+            CourseInfotxt.Show();
+            Itemlbl.Show();
+            DueDatelbl.Show();
+            Gradeslbl.Show();
+            Hw1lbl.Show();
+            Hw2lbl.Show();
+            finalProjectlbl.Show();
+            Midterm1lbl.Show();
+            Midterm2lbl.Show();
+            finalExamlbl.Show();
+            TotalGradelbl.Show();
+            Hw1Gradetxt.Show();
+            Hw2Gradetxt.Show();
+            MidtermGrade2txt.Show();
+            Midterm1Gradetxt.Show();
+            FinalProjecttxt.Show();
+            FinalExamtxt.Show();
+            TotalGradetxt.Show();
+            dueDate1.Show();
+            dueDate2.Show();
+            dueDate3.Show();
+            dueDate4.Show();
+            dueDate5.Show();
+            dueDate6.Show();
+        }
+
+        private void Course1btn_Click(object sender, EventArgs e)
+        {
+            CourseInfotxt.Clear();
+            CourseInfotxt.AppendText("CS_4303 29362: Hung Lin-T 4:00-5:15 pm");
+            CourseInfotxt.Show();
+            Itemlbl.Show();
+            DueDatelbl.Show();
+            Gradeslbl.Show();
+            Hw1lbl.Show();
+            Hw2lbl.Show();
+            finalProjectlbl.Show();
+            Midterm1lbl.Show();
+            Midterm2lbl.Show();
+            finalExamlbl.Show();
+            TotalGradelbl.Show();
+            Hw1Gradetxt.Show();
+            Hw2Gradetxt.Show();
+            MidtermGrade2txt.Show();
+            Midterm1Gradetxt.Show();
+            FinalProjecttxt.Show();
+            FinalExamtxt.Show();
+            TotalGradetxt.Show();
+            dueDate1.Show();
+            dueDate2.Show();
+            dueDate3.Show();
+            dueDate4.Show();
+            dueDate5.Show();
+            dueDate6.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -66,7 +142,28 @@ namespace UHD_Learn
 
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void HomePagebtn_Click(object sender, EventArgs e)
+        {
+            StudentPage studentpage = new StudentPage();
+            studentpage.Show();
+            this.Hide();
+        }
+
+        private void HomePagelbl_Click(object sender, EventArgs e)
+        {
+            StudentPage studentpage = new StudentPage();
+            studentpage.Show();
+            this.Hide();
+        }
+
+        private void HomeBtt_Click(object sender, EventArgs e)
+        {
+            StudentPage studentpage = new StudentPage();
+            studentpage.Show();
+            this.Hide();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
             StudentPage studentpage = new StudentPage();
             studentpage.Show();
