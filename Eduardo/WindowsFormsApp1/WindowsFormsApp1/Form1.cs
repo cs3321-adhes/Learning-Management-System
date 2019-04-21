@@ -75,5 +75,10 @@ namespace UHD_Learn
             HomePanel.Show();
             label3.Text = "Course Home Page";
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

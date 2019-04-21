@@ -8,3 +8,12 @@ C:\Users\ghast\OneDrive\Documents\Learning-Management-System-master (6)\Learning
 C:\Users\ghast\OneDrive\Documents\Learning-Management-System-master (6)\Learning-Management-System-master\Eduardo\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\ghast\OneDrive\Documents\Learning-Management-System-master (6)\Learning-Management-System-master\Eduardo\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\ghast\OneDrive\Documents\Learning-Management-System-master (6)\Learning-Management-System-master\Eduardo\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UHD_Learn.Form1.resources
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Sumanth\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Sumanth\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Sumanth\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Sumanth\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UHD_Learn.Form1.resources
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Sumanth\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Sumanth\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.Cache
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Sumanth\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Sumanth\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\keens\Documents\GitHub\Learning-Management-System\Sumanth\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
