@@ -40,6 +40,7 @@
             this.LogOutBtt = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SyllabusPanel = new System.Windows.Forms.Panel();
             this.SyllaLabel = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
@@ -68,8 +69,11 @@
             this.label8 = new System.Windows.Forms.Label();
             this.StudentsPanel = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SyllabusPanel.SuspendLayout();
@@ -156,7 +160,7 @@
             // HomeBtt
             // 
             this.HomeBtt.Image = ((System.Drawing.Image)(resources.GetObject("HomeBtt.Image")));
-            this.HomeBtt.Location = new System.Drawing.Point(37, 24);
+            this.HomeBtt.Location = new System.Drawing.Point(0, 0);
             this.HomeBtt.Name = "HomeBtt";
             this.HomeBtt.Size = new System.Drawing.Size(81, 75);
             this.HomeBtt.TabIndex = 4;
@@ -192,6 +196,15 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(973, 65);
             this.panel2.TabIndex = 9;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(190, 14);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(639, 34);
+            this.textBox2.TabIndex = 0;
             // 
             // SyllabusPanel
             // 
@@ -255,6 +268,7 @@
             // CourseConPanel
             // 
             this.CourseConPanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CourseConPanel.Controls.Add(this.button6);
             this.CourseConPanel.Controls.Add(this.linkLabel2);
             this.CourseConPanel.Location = new System.Drawing.Point(235, 188);
             this.CourseConPanel.Name = "CourseConPanel";
@@ -276,6 +290,7 @@
             // AssignmentsPanel
             // 
             this.AssignmentsPanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.AssignmentsPanel.Controls.Add(this.button5);
             this.AssignmentsPanel.Controls.Add(this.button7);
             this.AssignmentsPanel.Controls.Add(this.linkLabel7);
             this.AssignmentsPanel.Controls.Add(this.label7);
@@ -455,6 +470,7 @@
             // AnnouncementsPanel
             // 
             this.AnnouncementsPanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.AnnouncementsPanel.Controls.Add(this.button2);
             this.AnnouncementsPanel.Controls.Add(this.label8);
             this.AnnouncementsPanel.Location = new System.Drawing.Point(235, 188);
             this.AnnouncementsPanel.Name = "AnnouncementsPanel";
@@ -474,7 +490,8 @@
             // StudentsPanel
             // 
             this.StudentsPanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.StudentsPanel.Controls.Add(this.listBox1);
+            this.StudentsPanel.Controls.Add(this.button8);
+            this.StudentsPanel.Controls.Add(this.checkedListBox1);
             this.StudentsPanel.Location = new System.Drawing.Point(234, 188);
             this.StudentsPanel.Name = "StudentsPanel";
             this.StudentsPanel.Size = new System.Drawing.Size(743, 363);
@@ -484,6 +501,7 @@
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Desktop;
             this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.HomeBtt);
             this.panel3.Controls.Add(this.LogOutBtt);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(37, 24);
@@ -491,22 +509,61 @@
             this.panel3.Size = new System.Drawing.Size(953, 75);
             this.panel3.TabIndex = 18;
             // 
-            // listBox1
+            // button2
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(55, 50);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(205, 212);
-            this.listBox1.TabIndex = 0;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(40, 17);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(159, 30);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Add Announcement";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // button5
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(190, 14);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(639, 34);
-            this.textBox2.TabIndex = 0;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(55, 40);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(144, 27);
+            this.button5.TabIndex = 18;
+            this.button5.Text = "Add Assignment";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(63, 17);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(163, 30);
+            this.button6.TabIndex = 1;
+            this.button6.Text = "Add Course Content";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Andrew",
+            "Daniel",
+            "Eduardo",
+            "Sumanth",
+            "Hung"});
+            this.checkedListBox1.Location = new System.Drawing.Point(40, 53);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(553, 130);
+            this.checkedListBox1.TabIndex = 0;
+            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged_1);
+            // 
+            // button8
+            // 
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(40, 19);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(107, 28);
+            this.button8.TabIndex = 1;
+            this.button8.Text = "Add Student";
+            this.button8.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -515,15 +572,14 @@
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1002, 590);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.HomeBtt);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.StudentsPanel);
-            this.Controls.Add(this.SyllabusPanel);
             this.Controls.Add(this.HomePanel);
             this.Controls.Add(this.AnnouncementsPanel);
             this.Controls.Add(this.AssignmentsPanel);
             this.Controls.Add(this.CourseConPanel);
+            this.Controls.Add(this.StudentsPanel);
+            this.Controls.Add(this.SyllabusPanel);
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
@@ -588,7 +644,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.Button button8;
     }
 }
 

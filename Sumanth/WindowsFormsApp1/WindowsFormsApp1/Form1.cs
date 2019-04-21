@@ -74,7 +74,6 @@ namespace UHD_Learn
 
         private void label3_Click(object sender, EventArgs e)
         {
-            label3.Text = "Another one";
         }
 
         private void GradeBtt_Click(object sender, EventArgs e)
@@ -134,5 +133,9 @@ namespace UHD_Learn
 
         }
 
+        private void checkedListBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
