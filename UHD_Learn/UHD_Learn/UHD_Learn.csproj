@@ -90,6 +90,12 @@
     <Compile Include="TeacherPage.Designer.cs">
       <DependentUpon>TeacherPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="tGrades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tGrades.Designer.cs">
+      <DependentUpon>tGrades.cs</DependentUpon>
+    </Compile>
     <Compile Include="UHD_LearnDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -110,6 +116,9 @@
     <EmbeddedResource Include="StudentPage.resx" />
     <EmbeddedResource Include="tCoursePage.resx" />
     <EmbeddedResource Include="TeacherPage.resx" />
+    <EmbeddedResource Include="tGrades.resx">
+      <DependentUpon>tGrades.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

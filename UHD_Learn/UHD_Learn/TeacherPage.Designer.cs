@@ -38,6 +38,7 @@
             this.courseLabel1 = new System.Windows.Forms.LinkLabel();
             this.coursePanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.HomeBtt = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,17 +49,16 @@
             this.upgradeinfoBTTN = new System.Windows.Forms.Button();
             this.announcementPanel = new System.Windows.Forms.Panel();
             this.announcement = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.welcomePanel = new System.Windows.Forms.Panel();
             this.welcome = new System.Windows.Forms.Label();
             this.calendarPanel = new System.Windows.Forms.Panel();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.coursePanel.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.announcementPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.welcomePanel.SuspendLayout();
             this.calendarPanel.SuspendLayout();
             this.SuspendLayout();
@@ -171,6 +171,15 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(916, 107);
             this.panel2.TabIndex = 6;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(113, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(279, 50);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // HomeBtt
             // 
@@ -292,15 +301,6 @@
             this.announcement.Text = "FAFSA Available!!\r\nFall 2019 - Spring 2020 FAFSA Application is Open. \r\nAPPLY TOD" +
     "AY!\r\n_____________________________________________";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(113, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(194, 50);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
             // welcomePanel
             // 
             this.welcomePanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -348,10 +348,10 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.coursePanel);
             this.Controls.Add(this.calendarPanel);
             this.Controls.Add(this.announcementPanel);
             this.Controls.Add(this.welcomePanel);
-            this.Controls.Add(this.coursePanel);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TeacherPage";
             this.Text = "Form2";
@@ -361,12 +361,12 @@
             this.coursePanel.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.announcementPanel.ResumeLayout(false);
             this.announcementPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.welcomePanel.ResumeLayout(false);
             this.welcomePanel.PerformLayout();
             this.calendarPanel.ResumeLayout(false);

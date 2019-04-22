@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,10 +16,12 @@ namespace UHD_Learn
 
     public partial class TeacherPage : Form
     {
+
         //SqlConnection con = new SqlConnection("Data Source=DESKTOP-ANDREW\\SQLEXPRESS;Initial Catalog=UHD_LEARN;Integrated Security=True");
 
         SqlConnection con = new SqlConnection("Data Source=ASUSVIVOBOOK\\SQLEXPRESS;Initial Catalog=UHD_Learn;Integrated Security=True");
-        
+
+        List<Course> courseNames = new List<Course>();
         // Function to change the logout label based on info from log in screen.
         public void ChangeLabel(string s)
         {
@@ -34,7 +37,7 @@ namespace UHD_Learn
         private void TeacherPage_Load(object sender, EventArgs e)
         {
             // Declared list of courses to hold course info
-            List<Course> courseNames = new List<Course>();
+            
             con.Open();
             // Select only courses taught by this teacher
             SqlCommand cmd = new SqlCommand("SELECT * FROM Course where teacher='" + label1.Text + "'", con);
@@ -116,11 +119,14 @@ namespace UHD_Learn
 
         private void courseLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            //con.Open();
+            con.Open();
             SqlCommand cmd = new SqlCommand("Select * FROM Course WHERE CRN = '" + courseLabel1.Tag + "'", con);
             tCoursePage tcPage = new tCoursePage();
 
             tcPage.Text = courseLabel1.Text;
+            tcPage.setLabel(label1.Text);
+            tcPage.setTag(courseNames[0].Crn);
+
             this.Hide();
             tcPage.Show();
         }
@@ -177,13 +183,14 @@ namespace UHD_Learn
     public class Course
     {
         // properties with getters and setters for each course attribute
-        public string Crn { get; private set; }
+        public string Crn { get; protected internal set; }
 
-        public string Subj { get; private set; }
+        public string Subj { get; protected internal set; }
 
-        public string Cnum { get; private set; }
+        public string Cnum { get; protected internal set; }
 
-        public string Name { get; private set; }
+        public string Name { get; protected internal set; }
+
 
         // parametized constructor
         public Course(string c, string s, string cn, string n)

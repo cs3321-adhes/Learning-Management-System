@@ -36,7 +36,6 @@
             this.AssignmentBtt = new System.Windows.Forms.Button();
             this.CourseConBtt = new System.Windows.Forms.Button();
             this.StudentsBttn = new System.Windows.Forms.Button();
-            this.HomeBtt = new System.Windows.Forms.Button();
             this.LogOutBtt = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -48,8 +47,10 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.CourseConPanel = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.AssignmentsPanel = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.linkLabel7 = new System.Windows.Forms.LinkLabel();
             this.label7 = new System.Windows.Forms.Label();
@@ -66,14 +67,13 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.Assignment1 = new System.Windows.Forms.Label();
             this.AnnouncementsPanel = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.StudentsPanel = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.button8 = new System.Windows.Forms.Button();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.HomeBtt = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SyllabusPanel.SuspendLayout();
@@ -93,25 +93,29 @@
             this.panel1.Controls.Add(this.AssignmentBtt);
             this.panel1.Controls.Add(this.CourseConBtt);
             this.panel1.Controls.Add(this.StudentsBttn);
-            this.panel1.Location = new System.Drawing.Point(12, 188);
+            this.panel1.Location = new System.Drawing.Point(16, 231);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(158, 360);
+            this.panel1.Size = new System.Drawing.Size(211, 443);
             this.panel1.TabIndex = 0;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(14, 243);
+            this.button3.Location = new System.Drawing.Point(19, 299);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(126, 30);
+            this.button3.Size = new System.Drawing.Size(168, 37);
             this.button3.TabIndex = 5;
             this.button3.Text = "Grades";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // SyllabusBttn
             // 
-            this.SyllabusBttn.Location = new System.Drawing.Point(14, 63);
+            this.SyllabusBttn.Location = new System.Drawing.Point(19, 78);
+            this.SyllabusBttn.Margin = new System.Windows.Forms.Padding(4);
             this.SyllabusBttn.Name = "SyllabusBttn";
-            this.SyllabusBttn.Size = new System.Drawing.Size(126, 30);
+            this.SyllabusBttn.Size = new System.Drawing.Size(168, 37);
             this.SyllabusBttn.TabIndex = 4;
             this.SyllabusBttn.Text = "Syllabus";
             this.SyllabusBttn.UseVisualStyleBackColor = true;
@@ -119,9 +123,10 @@
             // 
             // AnnceBttn
             // 
-            this.AnnceBttn.Location = new System.Drawing.Point(14, 135);
+            this.AnnceBttn.Location = new System.Drawing.Point(19, 166);
+            this.AnnceBttn.Margin = new System.Windows.Forms.Padding(4);
             this.AnnceBttn.Name = "AnnceBttn";
-            this.AnnceBttn.Size = new System.Drawing.Size(126, 30);
+            this.AnnceBttn.Size = new System.Drawing.Size(168, 37);
             this.AnnceBttn.TabIndex = 3;
             this.AnnceBttn.Text = "Announcements";
             this.AnnceBttn.UseVisualStyleBackColor = true;
@@ -129,9 +134,10 @@
             // 
             // AssignmentBtt
             // 
-            this.AssignmentBtt.Location = new System.Drawing.Point(14, 207);
+            this.AssignmentBtt.Location = new System.Drawing.Point(19, 255);
+            this.AssignmentBtt.Margin = new System.Windows.Forms.Padding(4);
             this.AssignmentBtt.Name = "AssignmentBtt";
-            this.AssignmentBtt.Size = new System.Drawing.Size(126, 30);
+            this.AssignmentBtt.Size = new System.Drawing.Size(168, 37);
             this.AssignmentBtt.TabIndex = 2;
             this.AssignmentBtt.Text = "Assignments";
             this.AssignmentBtt.UseVisualStyleBackColor = true;
@@ -139,9 +145,10 @@
             // 
             // CourseConBtt
             // 
-            this.CourseConBtt.Location = new System.Drawing.Point(14, 171);
+            this.CourseConBtt.Location = new System.Drawing.Point(19, 210);
+            this.CourseConBtt.Margin = new System.Windows.Forms.Padding(4);
             this.CourseConBtt.Name = "CourseConBtt";
-            this.CourseConBtt.Size = new System.Drawing.Size(126, 30);
+            this.CourseConBtt.Size = new System.Drawing.Size(168, 37);
             this.CourseConBtt.TabIndex = 1;
             this.CourseConBtt.Text = "Course Content";
             this.CourseConBtt.UseVisualStyleBackColor = true;
@@ -149,41 +156,35 @@
             // 
             // StudentsBttn
             // 
-            this.StudentsBttn.Location = new System.Drawing.Point(14, 99);
+            this.StudentsBttn.Location = new System.Drawing.Point(19, 122);
+            this.StudentsBttn.Margin = new System.Windows.Forms.Padding(4);
             this.StudentsBttn.Name = "StudentsBttn";
-            this.StudentsBttn.Size = new System.Drawing.Size(126, 30);
+            this.StudentsBttn.Size = new System.Drawing.Size(168, 37);
             this.StudentsBttn.TabIndex = 0;
             this.StudentsBttn.Text = "Students";
             this.StudentsBttn.UseVisualStyleBackColor = true;
             this.StudentsBttn.Click += new System.EventHandler(this.StudentsBttn_Click);
             // 
-            // HomeBtt
-            // 
-            this.HomeBtt.Image = ((System.Drawing.Image)(resources.GetObject("HomeBtt.Image")));
-            this.HomeBtt.Location = new System.Drawing.Point(0, 0);
-            this.HomeBtt.Name = "HomeBtt";
-            this.HomeBtt.Size = new System.Drawing.Size(81, 75);
-            this.HomeBtt.TabIndex = 4;
-            this.HomeBtt.UseVisualStyleBackColor = true;
-            this.HomeBtt.Click += new System.EventHandler(this.HomeBtt_Click);
-            // 
             // LogOutBtt
             // 
-            this.LogOutBtt.Location = new System.Drawing.Point(865, 20);
+            this.LogOutBtt.Location = new System.Drawing.Point(1153, 25);
+            this.LogOutBtt.Margin = new System.Windows.Forms.Padding(4);
             this.LogOutBtt.Name = "LogOutBtt";
-            this.LogOutBtt.Size = new System.Drawing.Size(75, 34);
+            this.LogOutBtt.Size = new System.Drawing.Size(100, 42);
             this.LogOutBtt.TabIndex = 6;
             this.LogOutBtt.Text = "Log Out";
             this.LogOutBtt.UseVisualStyleBackColor = true;
+            this.LogOutBtt.Click += new System.EventHandler(this.LogOutBtt_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(103, 23);
+            this.label3.Location = new System.Drawing.Point(137, 28);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 29);
+            this.label3.Size = new System.Drawing.Size(169, 36);
             this.label3.TabIndex = 7;
             this.label3.Text = "Home Page";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -192,18 +193,20 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Location = new System.Drawing.Point(11, 105);
+            this.panel2.Location = new System.Drawing.Point(15, 129);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(973, 65);
+            this.panel2.Size = new System.Drawing.Size(1297, 80);
             this.panel2.TabIndex = 9;
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(190, 14);
+            this.textBox2.Location = new System.Drawing.Point(297, 23);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(639, 34);
+            this.textBox2.Size = new System.Drawing.Size(851, 41);
             this.textBox2.TabIndex = 0;
             // 
             // SyllabusPanel
@@ -211,18 +214,20 @@
             this.SyllabusPanel.BackColor = System.Drawing.SystemColors.Window;
             this.SyllabusPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.SyllabusPanel.Controls.Add(this.SyllaLabel);
-            this.SyllabusPanel.Location = new System.Drawing.Point(235, 188);
+            this.SyllabusPanel.Location = new System.Drawing.Point(313, 231);
+            this.SyllabusPanel.Margin = new System.Windows.Forms.Padding(4);
             this.SyllabusPanel.Name = "SyllabusPanel";
-            this.SyllabusPanel.Size = new System.Drawing.Size(745, 363);
+            this.SyllabusPanel.Size = new System.Drawing.Size(993, 446);
             this.SyllabusPanel.TabIndex = 11;
             // 
             // SyllaLabel
             // 
             this.SyllaLabel.AutoSize = true;
             this.SyllaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SyllaLabel.Location = new System.Drawing.Point(44, 42);
+            this.SyllaLabel.Location = new System.Drawing.Point(59, 52);
+            this.SyllaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SyllaLabel.Name = "SyllaLabel";
-            this.SyllaLabel.Size = new System.Drawing.Size(111, 20);
+            this.SyllaLabel.Size = new System.Drawing.Size(142, 25);
             this.SyllaLabel.TabIndex = 0;
             this.SyllaLabel.TabStop = true;
             this.SyllaLabel.Text = "Class Syllabus";
@@ -233,9 +238,10 @@
             this.label2.BackColor = System.Drawing.SystemColors.Desktop;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(678, 26);
+            this.label2.Location = new System.Drawing.Point(904, 32);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(158, 25);
+            this.label2.Size = new System.Drawing.Size(205, 29);
             this.label2.TabIndex = 5;
             this.label2.Text = "Sumanth Pisipati";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -245,23 +251,26 @@
             this.HomePanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.HomePanel.Controls.Add(this.textBox1);
             this.HomePanel.Controls.Add(this.monthCalendar1);
-            this.HomePanel.Location = new System.Drawing.Point(235, 192);
+            this.HomePanel.Location = new System.Drawing.Point(313, 236);
+            this.HomePanel.Margin = new System.Windows.Forms.Padding(4);
             this.HomePanel.Name = "HomePanel";
-            this.HomePanel.Size = new System.Drawing.Size(745, 359);
+            this.HomePanel.Size = new System.Drawing.Size(993, 442);
             this.HomePanel.TabIndex = 12;
             // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBox1.Location = new System.Drawing.Point(63, 85);
+            this.textBox1.Location = new System.Drawing.Point(84, 105);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(368, 179);
+            this.textBox1.Size = new System.Drawing.Size(489, 219);
             this.textBox1.TabIndex = 1;
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(485, 85);
+            this.monthCalendar1.Location = new System.Drawing.Point(647, 105);
+            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(12, 11, 12, 11);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 0;
             // 
@@ -270,18 +279,31 @@
             this.CourseConPanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.CourseConPanel.Controls.Add(this.button6);
             this.CourseConPanel.Controls.Add(this.linkLabel2);
-            this.CourseConPanel.Location = new System.Drawing.Point(235, 188);
+            this.CourseConPanel.Location = new System.Drawing.Point(313, 231);
+            this.CourseConPanel.Margin = new System.Windows.Forms.Padding(4);
             this.CourseConPanel.Name = "CourseConPanel";
-            this.CourseConPanel.Size = new System.Drawing.Size(745, 363);
+            this.CourseConPanel.Size = new System.Drawing.Size(993, 447);
             this.CourseConPanel.TabIndex = 13;
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(84, 21);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(217, 37);
+            this.button6.TabIndex = 1;
+            this.button6.Text = "Add Course Content";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.Location = new System.Drawing.Point(60, 50);
+            this.linkLabel2.Location = new System.Drawing.Point(80, 62);
+            this.linkLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(76, 20);
+            this.linkLabel2.Size = new System.Drawing.Size(93, 25);
             this.linkLabel2.TabIndex = 0;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Lecture 1";
@@ -306,17 +328,30 @@
             this.AssignmentsPanel.Controls.Add(this.button4);
             this.AssignmentsPanel.Controls.Add(this.linkLabel1);
             this.AssignmentsPanel.Controls.Add(this.Assignment1);
-            this.AssignmentsPanel.Location = new System.Drawing.Point(235, 188);
+            this.AssignmentsPanel.Location = new System.Drawing.Point(313, 231);
+            this.AssignmentsPanel.Margin = new System.Windows.Forms.Padding(4);
             this.AssignmentsPanel.Name = "AssignmentsPanel";
-            this.AssignmentsPanel.Size = new System.Drawing.Size(745, 363);
+            this.AssignmentsPanel.Size = new System.Drawing.Size(993, 447);
             this.AssignmentsPanel.TabIndex = 14;
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(73, 49);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(192, 33);
+            this.button5.TabIndex = 18;
+            this.button5.Text = "Add Assignment";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(622, 239);
+            this.button7.Location = new System.Drawing.Point(829, 294);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 27);
+            this.button7.Size = new System.Drawing.Size(100, 33);
             this.button7.TabIndex = 17;
             this.button7.Text = "Submit";
             this.button7.UseVisualStyleBackColor = true;
@@ -325,9 +360,10 @@
             // 
             this.linkLabel7.AutoSize = true;
             this.linkLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel7.Location = new System.Drawing.Point(205, 242);
+            this.linkLabel7.Location = new System.Drawing.Point(273, 298);
+            this.linkLabel7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel7.Name = "linkLabel7";
-            this.linkLabel7.Size = new System.Drawing.Size(122, 20);
+            this.linkLabel7.Size = new System.Drawing.Size(148, 25);
             this.linkLabel7.TabIndex = 16;
             this.linkLabel7.TabStop = true;
             this.linkLabel7.Text = "Instructions.doc";
@@ -336,9 +372,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(50, 243);
+            this.label7.Location = new System.Drawing.Point(67, 299);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 20);
+            this.label7.Size = new System.Drawing.Size(119, 25);
             this.label7.TabIndex = 15;
             this.label7.Text = "Final Project";
             // 
@@ -346,9 +383,10 @@
             // 
             this.linkLabel6.AutoSize = true;
             this.linkLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel6.Location = new System.Drawing.Point(205, 210);
+            this.linkLabel6.Location = new System.Drawing.Point(273, 258);
+            this.linkLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel6.Name = "linkLabel6";
-            this.linkLabel6.Size = new System.Drawing.Size(122, 20);
+            this.linkLabel6.Size = new System.Drawing.Size(148, 25);
             this.linkLabel6.TabIndex = 13;
             this.linkLabel6.TabStop = true;
             this.linkLabel6.Text = "Instructions.doc";
@@ -357,9 +395,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(50, 211);
+            this.label6.Location = new System.Drawing.Point(67, 260);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 20);
+            this.label6.Size = new System.Drawing.Size(109, 25);
             this.label6.TabIndex = 12;
             this.label6.Text = "Final Exam";
             // 
@@ -367,9 +406,10 @@
             // 
             this.linkLabel5.AutoSize = true;
             this.linkLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel5.Location = new System.Drawing.Point(205, 180);
+            this.linkLabel5.Location = new System.Drawing.Point(273, 222);
+            this.linkLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(122, 20);
+            this.linkLabel5.Size = new System.Drawing.Size(148, 25);
             this.linkLabel5.TabIndex = 10;
             this.linkLabel5.TabStop = true;
             this.linkLabel5.Text = "Instructions.doc";
@@ -378,9 +418,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(50, 181);
+            this.label5.Location = new System.Drawing.Point(67, 223);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(123, 20);
+            this.label5.Size = new System.Drawing.Size(153, 25);
             this.label5.TabIndex = 9;
             this.label5.Text = "Midterm Exam 2";
             // 
@@ -388,9 +429,10 @@
             // 
             this.linkLabel4.AutoSize = true;
             this.linkLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel4.Location = new System.Drawing.Point(205, 144);
+            this.linkLabel4.Location = new System.Drawing.Point(273, 177);
+            this.linkLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(122, 20);
+            this.linkLabel4.Size = new System.Drawing.Size(148, 25);
             this.linkLabel4.TabIndex = 7;
             this.linkLabel4.TabStop = true;
             this.linkLabel4.Text = "Instructions.doc";
@@ -399,18 +441,20 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(50, 145);
+            this.label4.Location = new System.Drawing.Point(67, 178);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 20);
+            this.label4.Size = new System.Drawing.Size(153, 25);
             this.label4.TabIndex = 6;
             this.label4.Text = "Midterm Exam 1";
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(622, 105);
+            this.button1.Location = new System.Drawing.Point(829, 129);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 27);
+            this.button1.Size = new System.Drawing.Size(100, 33);
             this.button1.TabIndex = 5;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
@@ -419,9 +463,10 @@
             // 
             this.linkLabel3.AutoSize = true;
             this.linkLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel3.Location = new System.Drawing.Point(205, 108);
+            this.linkLabel3.Location = new System.Drawing.Point(273, 133);
+            this.linkLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(122, 20);
+            this.linkLabel3.Size = new System.Drawing.Size(148, 25);
             this.linkLabel3.TabIndex = 4;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "Instructions.doc";
@@ -430,18 +475,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(50, 108);
+            this.label1.Location = new System.Drawing.Point(67, 133);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 20);
+            this.label1.Size = new System.Drawing.Size(121, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "Homework 2";
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(622, 69);
+            this.button4.Location = new System.Drawing.Point(829, 85);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 27);
+            this.button4.Size = new System.Drawing.Size(100, 33);
             this.button4.TabIndex = 2;
             this.button4.Text = "Submit";
             this.button4.UseVisualStyleBackColor = true;
@@ -450,9 +497,10 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(205, 72);
+            this.linkLabel1.Location = new System.Drawing.Point(273, 89);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(122, 20);
+            this.linkLabel1.Size = new System.Drawing.Size(148, 25);
             this.linkLabel1.TabIndex = 1;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Instructions.doc";
@@ -461,9 +509,10 @@
             // 
             this.Assignment1.AutoSize = true;
             this.Assignment1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Assignment1.Location = new System.Drawing.Point(50, 73);
+            this.Assignment1.Location = new System.Drawing.Point(67, 90);
+            this.Assignment1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Assignment1.Name = "Assignment1";
-            this.Assignment1.Size = new System.Drawing.Size(98, 20);
+            this.Assignment1.Size = new System.Drawing.Size(121, 25);
             this.Assignment1.TabIndex = 0;
             this.Assignment1.Text = "Homework 1";
             // 
@@ -472,18 +521,31 @@
             this.AnnouncementsPanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.AnnouncementsPanel.Controls.Add(this.button2);
             this.AnnouncementsPanel.Controls.Add(this.label8);
-            this.AnnouncementsPanel.Location = new System.Drawing.Point(235, 188);
+            this.AnnouncementsPanel.Location = new System.Drawing.Point(313, 231);
+            this.AnnouncementsPanel.Margin = new System.Windows.Forms.Padding(4);
             this.AnnouncementsPanel.Name = "AnnouncementsPanel";
-            this.AnnouncementsPanel.Size = new System.Drawing.Size(745, 363);
+            this.AnnouncementsPanel.Size = new System.Drawing.Size(993, 447);
             this.AnnouncementsPanel.TabIndex = 16;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(53, 21);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(212, 37);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Add Announcement";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(36, 63);
+            this.label8.Location = new System.Drawing.Point(48, 78);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(163, 20);
+            this.label8.Size = new System.Drawing.Size(207, 25);
             this.label8.TabIndex = 1;
             this.label8.Text = "No Class on Thursday";
             // 
@@ -492,52 +554,22 @@
             this.StudentsPanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.StudentsPanel.Controls.Add(this.button8);
             this.StudentsPanel.Controls.Add(this.checkedListBox1);
-            this.StudentsPanel.Location = new System.Drawing.Point(234, 188);
+            this.StudentsPanel.Location = new System.Drawing.Point(312, 231);
+            this.StudentsPanel.Margin = new System.Windows.Forms.Padding(4);
             this.StudentsPanel.Name = "StudentsPanel";
-            this.StudentsPanel.Size = new System.Drawing.Size(743, 363);
+            this.StudentsPanel.Size = new System.Drawing.Size(991, 447);
             this.StudentsPanel.TabIndex = 17;
             // 
-            // panel3
+            // button8
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.Desktop;
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.HomeBtt);
-            this.panel3.Controls.Add(this.LogOutBtt);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(37, 24);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(953, 75);
-            this.panel3.TabIndex = 18;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(40, 17);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(159, 30);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Add Announcement";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(55, 40);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(144, 27);
-            this.button5.TabIndex = 18;
-            this.button5.Text = "Add Assignment";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(63, 17);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(163, 30);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "Add Course Content";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(53, 23);
+            this.button8.Margin = new System.Windows.Forms.Padding(4);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(143, 34);
+            this.button8.TabIndex = 1;
+            this.button8.Text = "Add Student";
+            this.button8.UseVisualStyleBackColor = true;
             // 
             // checkedListBox1
             // 
@@ -549,28 +581,43 @@
             "Eduardo",
             "Sumanth",
             "Hung"});
-            this.checkedListBox1.Location = new System.Drawing.Point(40, 53);
+            this.checkedListBox1.Location = new System.Drawing.Point(53, 65);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(553, 130);
+            this.checkedListBox1.Size = new System.Drawing.Size(736, 154);
             this.checkedListBox1.TabIndex = 0;
             this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged_1);
             // 
-            // button8
+            // panel3
             // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(40, 19);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(107, 28);
-            this.button8.TabIndex = 1;
-            this.button8.Text = "Add Student";
-            this.button8.UseVisualStyleBackColor = true;
+            this.panel3.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.HomeBtt);
+            this.panel3.Controls.Add(this.LogOutBtt);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Location = new System.Drawing.Point(49, 30);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1271, 92);
+            this.panel3.TabIndex = 18;
+            // 
+            // HomeBtt
+            // 
+            this.HomeBtt.Image = ((System.Drawing.Image)(resources.GetObject("HomeBtt.Image")));
+            this.HomeBtt.Location = new System.Drawing.Point(0, 0);
+            this.HomeBtt.Margin = new System.Windows.Forms.Padding(4);
+            this.HomeBtt.Name = "HomeBtt";
+            this.HomeBtt.Size = new System.Drawing.Size(108, 92);
+            this.HomeBtt.TabIndex = 4;
+            this.HomeBtt.UseVisualStyleBackColor = true;
+            this.HomeBtt.Click += new System.EventHandler(this.HomeBtt_Click);
             // 
             // tCoursePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1002, 590);
+            this.ClientSize = new System.Drawing.Size(1336, 726);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
@@ -580,8 +627,10 @@
             this.Controls.Add(this.CourseConPanel);
             this.Controls.Add(this.StudentsPanel);
             this.Controls.Add(this.SyllabusPanel);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "tCoursePage";
             this.Text = "tCoursePage";
+            this.Load += new System.EventHandler(this.tCoursePage_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

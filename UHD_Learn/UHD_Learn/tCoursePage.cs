@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +14,16 @@ namespace UHD_Learn
 {
     public partial class tCoursePage : Form
     {
+        SqlConnection con = new SqlConnection("Data Source=ASUSVIVOBOOK\\SQLEXPRESS;Initial Catalog=UHD_Learn;Integrated Security=True");
+
         public tCoursePage()
         {
             InitializeComponent();
+        }
+
+        public void setLabel(string s)
+        {
+            label2.Text = s;
         }
 
         private void HomeBtt_Click(object sender, EventArgs e)
@@ -93,19 +102,13 @@ namespace UHD_Learn
             label3.Text = "Announcements";
         }
 
-        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e){}
-
         private void label2_Click(object sender, EventArgs e){}
-
-        private void HomePanel_Paint(object sender, PaintEventArgs e){}
 
         private void SyllabusPanel_Paint(object sender, PaintEventArgs e){}
 
         private void monthCalendar1_DateChanged_1(object sender, DateRangeEventArgs e){}
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e){}
-
-        private void label4_Click(object sender, EventArgs e){}
 
         private void panel4_Paint(object sender, PaintEventArgs e){}
 
@@ -137,5 +140,55 @@ namespace UHD_Learn
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form tGradesForm = new tGrades();
+            tGradesForm.Show();
+        }
+
+        private void tCoursePage_Load(object sender, EventArgs e)
+        {
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Course where CRN='" + this.Tag + "'", con);
+
+            SqlDataReader rd = cmd.ExecuteReader();
+
+            Course course = new Course ("", "", "", "");
+
+            // If there are courses taught by this teacher
+            if (rd.HasRows)
+            {
+
+                // reads the table
+                while (rd.Read())
+                {
+                    // Add course info to course list
+                    course.Crn = rd.GetString(0).Trim();
+                    course.Subj = rd.GetString(1).Trim();
+                    course.Cnum = rd.GetString(2).Trim();
+                    course.Name = rd.GetString(3).Trim();
+
+                }
+            }
+            
+            textBox2.Text = course.Crn + " " + course.Subj + "" + course.Cnum + ": " + course.Name;
+
+        }
+
+        public void setTag(string s)
+        {
+            this.Tag = s;
+        }
+
+        private void LogOutBtt_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.OpenForms["Login"].Show();
+        }
     }
+
+ 
+
 }
