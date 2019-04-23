@@ -1,6 +1,6 @@
 ﻿namespace UHD_Learn
 {
-    partial class Form1
+    partial class sGrades
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(sGrades));
             this.panel1 = new System.Windows.Forms.Panel();
             this.Course4btn = new System.Windows.Forms.Button();
             this.Course3btn = new System.Windows.Forms.Button();
@@ -529,7 +529,7 @@
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             // 
-            // Form1
+            // sGrades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -540,7 +540,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Form1";
+            this.Name = "sGrades";
             this.Text = "Grades";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
