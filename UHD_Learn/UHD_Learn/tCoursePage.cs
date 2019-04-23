@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -15,7 +14,6 @@ namespace UHD_Learn
     public partial class tCoursePage : Form
     {
         SqlConnection con = new SqlConnection("Data Source=ASUSVIVOBOOK\\SQLEXPRESS;Initial Catalog=UHD_Learn;Integrated Security=True");
-
         public tCoursePage()
         {
             InitializeComponent();
@@ -102,13 +100,19 @@ namespace UHD_Learn
             label3.Text = "Announcements";
         }
 
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e){}
+
         private void label2_Click(object sender, EventArgs e){}
+
+        private void HomePanel_Paint(object sender, PaintEventArgs e){}
 
         private void SyllabusPanel_Paint(object sender, PaintEventArgs e){}
 
         private void monthCalendar1_DateChanged_1(object sender, DateRangeEventArgs e){}
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e){}
+
+        private void label4_Click(object sender, EventArgs e){}
 
         private void panel4_Paint(object sender, PaintEventArgs e){}
 
@@ -147,6 +151,17 @@ namespace UHD_Learn
             tGradesForm.Show();
         }
 
+        public void setTag(string s)
+        {
+            this.Tag = s;
+        }
+
+        private void LogOutBtt_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.OpenForms["Login"].Show();
+        }
+
         private void tCoursePage_Load(object sender, EventArgs e)
         {
             con.Open();
@@ -155,7 +170,7 @@ namespace UHD_Learn
 
             SqlDataReader rd = cmd.ExecuteReader();
 
-            Course course = new Course ("", "", "", "");
+            Course course = new Course("", "", "", "");
 
             // If there are courses taught by this teacher
             if (rd.HasRows)
@@ -172,23 +187,9 @@ namespace UHD_Learn
 
                 }
             }
-            
+
             textBox2.Text = course.Crn + " " + course.Subj + "" + course.Cnum + ": " + course.Name;
 
         }
-
-        public void setTag(string s)
-        {
-            this.Tag = s;
-        }
-
-        private void LogOutBtt_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Application.OpenForms["Login"].Show();
-        }
     }
-
- 
-
 }

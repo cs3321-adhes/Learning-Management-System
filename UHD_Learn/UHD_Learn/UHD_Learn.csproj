@@ -81,9 +81,7 @@
     <Compile Include="tCoursePage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="tCoursePage.Designer.cs">
-      <DependentUpon>tCoursePage.cs</DependentUpon>
-    </Compile>
+    <Compile Include="tCoursePage.Designer.cs" />
     <Compile Include="TeacherPage.cs">
       <SubType>Form</SubType>
     </Compile>

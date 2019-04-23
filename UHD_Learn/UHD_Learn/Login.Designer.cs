@@ -64,7 +64,7 @@
             // userBox
             // 
             this.userBox.Location = new System.Drawing.Point(351, 247);
-            this.userBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.userBox.Margin = new System.Windows.Forms.Padding(4);
             this.userBox.Name = "userBox";
             this.userBox.Size = new System.Drawing.Size(293, 22);
             this.userBox.TabIndex = 2;
@@ -72,7 +72,7 @@
             // pwBox
             // 
             this.pwBox.Location = new System.Drawing.Point(351, 297);
-            this.pwBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pwBox.Margin = new System.Windows.Forms.Padding(4);
             this.pwBox.Name = "pwBox";
             this.pwBox.PasswordChar = '*';
             this.pwBox.Size = new System.Drawing.Size(293, 22);
@@ -81,7 +81,7 @@
             // loginButton
             // 
             this.loginButton.Location = new System.Drawing.Point(351, 329);
-            this.loginButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(4);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(100, 28);
             this.loginButton.TabIndex = 4;
@@ -126,10 +126,11 @@
             this.Controls.Add(this.password);
             this.Controls.Add(this.username);
             this.Controls.Add(this.pictureBox2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.Text = "UHD Learn";
             this.Load += new System.EventHandler(this.Login_Load);
+            this.Shown += new System.EventHandler(this.formShown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

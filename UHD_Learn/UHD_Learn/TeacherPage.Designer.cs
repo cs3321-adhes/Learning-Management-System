@@ -101,10 +101,11 @@
             // courseLabel4
             // 
             this.courseLabel4.AutoSize = true;
-            this.courseLabel4.Location = new System.Drawing.Point(39, 163);
+            this.courseLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.courseLabel4.Location = new System.Drawing.Point(39, 264);
             this.courseLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.courseLabel4.Name = "courseLabel4";
-            this.courseLabel4.Size = new System.Drawing.Size(72, 17);
+            this.courseLabel4.Size = new System.Drawing.Size(100, 25);
             this.courseLabel4.TabIndex = 3;
             this.courseLabel4.TabStop = true;
             this.courseLabel4.Text = "linkLabel4";
@@ -113,10 +114,11 @@
             // courseLabel3
             // 
             this.courseLabel3.AutoSize = true;
-            this.courseLabel3.Location = new System.Drawing.Point(39, 126);
+            this.courseLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.courseLabel3.Location = new System.Drawing.Point(39, 196);
             this.courseLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.courseLabel3.Name = "courseLabel3";
-            this.courseLabel3.Size = new System.Drawing.Size(72, 17);
+            this.courseLabel3.Size = new System.Drawing.Size(100, 25);
             this.courseLabel3.TabIndex = 2;
             this.courseLabel3.TabStop = true;
             this.courseLabel3.Text = "linkLabel3";
@@ -125,10 +127,11 @@
             // courseLabel2
             // 
             this.courseLabel2.AutoSize = true;
-            this.courseLabel2.Location = new System.Drawing.Point(39, 92);
+            this.courseLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.courseLabel2.Location = new System.Drawing.Point(39, 129);
             this.courseLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.courseLabel2.Name = "courseLabel2";
-            this.courseLabel2.Size = new System.Drawing.Size(72, 17);
+            this.courseLabel2.Size = new System.Drawing.Size(100, 25);
             this.courseLabel2.TabIndex = 1;
             this.courseLabel2.TabStop = true;
             this.courseLabel2.Text = "linkLabel2";
@@ -137,10 +140,11 @@
             // courseLabel1
             // 
             this.courseLabel1.AutoSize = true;
+            this.courseLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.courseLabel1.Location = new System.Drawing.Point(39, 58);
             this.courseLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.courseLabel1.Name = "courseLabel1";
-            this.courseLabel1.Size = new System.Drawing.Size(72, 17);
+            this.courseLabel1.Size = new System.Drawing.Size(100, 25);
             this.courseLabel1.TabIndex = 0;
             this.courseLabel1.TabStop = true;
             this.courseLabel1.Text = "linkLabel1";

@@ -101,14 +101,17 @@ namespace UHD_Learn
 
         private void TeacherPage_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Environment.Exit(0);
+            //Environment.Exit(0);
         }
 
         private void logoutButton_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
-            this.Hide();
-            login.Show();
+            //Login login = new Login();
+            //this.Hide();
+            //login.Show();
+
+            this.Close();
+            Application.OpenForms["Login"].Show();
 
         }
 

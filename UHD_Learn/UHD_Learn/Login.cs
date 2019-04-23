@@ -86,8 +86,7 @@ namespace UHD_Learn
             {
                 // if username and password doesn't match, a message box will open and display this message
                 MessageBox.Show("Invalid Username and Password.");
-                this.userBox.Text = "";
-                this.pwBox.Text = "";
+                clearTextBox();
             }
 
             // closes DB connection
@@ -106,6 +105,17 @@ namespace UHD_Learn
             passwordForm.Show();
             this.Hide();
 
+        }
+
+        public void clearTextBox()
+        {
+            userBox.Text = "";
+            pwBox.Text = "";
+        }
+
+        private void formShown(object sender, EventArgs e)
+        {
+            clearTextBox();
         }
     }
 }

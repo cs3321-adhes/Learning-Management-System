@@ -32,15 +32,11 @@ namespace UHD_Learn
 
         }
 
-        public void ChangeLabel(string s)
-        {
-            label2.Text = s;
-        }
 
         private void StudentPage_Load(object sender, EventArgs e)
         {
             con.Open();
-            SqlCommand cmd = new SqlCommand("Select * FROM Student where fname='Hung'", con);
+            SqlCommand cmd = new SqlCommand("Select * FROM Student where gatorID='" + gatorID + "'", con);
             
             SqlDataReader rd = cmd.ExecuteReader();
             string fname = "";
@@ -57,9 +53,9 @@ namespace UHD_Learn
                 }
             }
 
-            this.label2.Text = fname + " " + lname;
+            rd.Close();
 
-            //ChangeLabel(name);
+            label2.Text = fname + " " + lname;
 
             this.Text = "Welcome, " + fname;
             rd.Close();
@@ -252,6 +248,12 @@ namespace UHD_Learn
         private void announcement_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void LogOutBtt_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.OpenForms["Login"].Show();
         }
     }
 }
