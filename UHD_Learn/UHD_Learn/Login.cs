@@ -77,7 +77,7 @@ namespace UHD_Learn
                 else if (logType.Equals("student"))
                 {
                     StudentPage studentpage = new StudentPage();
-                    studentpage.setGatorID(ID);
+                    studentpage.gatorID = ID;
                     studentpage.Show();
                     this.Hide();
                 }

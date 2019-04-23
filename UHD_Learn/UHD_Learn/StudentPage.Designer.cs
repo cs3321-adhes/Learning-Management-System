@@ -401,10 +401,10 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.coursepanel);
             this.Controls.Add(this.calendarPanel);
             this.Controls.Add(this.announcementPanel);
             this.Controls.Add(this.welcomePanel);
-            this.Controls.Add(this.coursepanel);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StudentPage";
             this.Text = "MyGrades";

@@ -12,9 +12,26 @@ namespace UHD_Learn
 {
     public partial class sCoursePage : Form
     {
+        public string gatorID { get; protected internal set; }
+
         public sCoursePage()
         {
             InitializeComponent();
+        }
+
+        public void setTag(string s)
+        {
+            this.Tag = s;
+        }
+
+        public void setLabel2(string s)
+        {
+            label2.Text = s;
+        }
+
+        public void setLabel(string s)
+        {
+            CourseName.Text = s;
         }
 
         private void HomeBtt_Click(object sender, EventArgs e)
@@ -62,9 +79,15 @@ namespace UHD_Learn
 
         private void GradeBtt_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            //Form grades = new grades();
-            //grades.Show();
+            sGrades studentGrades = new sGrades();
+
+            studentGrades.Crn = this.Tag.ToString();
+            studentGrades.gatorID = gatorID;
+
+            this.Hide();
+
+            studentGrades.Show();
+
         }
 
         private void CoursesHomeBtt_Click(object sender, EventArgs e)

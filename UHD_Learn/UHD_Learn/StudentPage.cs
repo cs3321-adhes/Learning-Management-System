@@ -15,17 +15,15 @@ namespace UHD_Learn
     public partial class StudentPage : Form
     {
         SqlConnection con = new SqlConnection("Data Source=ASUSVIVOBOOK\\SQLEXPRESS;Initial Catalog=UHD_Learn;Integrated Security=True");
+        List<Course> courseNames = new List<Course>();
+
         public StudentPage()
         {
             InitializeComponent();
         }
 
-        public string gatorID { get; private set; }
+        public string gatorID { get; protected internal set; }
 
-        public void setGatorID(string s)
-        {
-            gatorID = s;
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -83,7 +81,7 @@ namespace UHD_Learn
             SqlCommand cmd2 = new SqlCommand("Select * FROM Course WHERE CRN IN ('" + courseID[0] + "','" + courseID[1] + "','" + courseID[2] + "','" + courseID[3] +"')", con);
             rd = cmd2.ExecuteReader();
 
-            List<Course> courseNames = new List<Course>();
+           
 
 
             if (rd.HasRows)
@@ -157,7 +155,15 @@ namespace UHD_Learn
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            sCoursePage scPage = new sCoursePage();
+            scPage.Text = courseLabel1.Text;
+            scPage.setLabel(courseLabel1.Text);
+            scPage.setLabel2(label2.Text);
+            scPage.setTag(courseNames[0].Crn);
+            scPage.gatorID = gatorID;
 
+            this.Hide();
+            scPage.Show();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -187,9 +193,9 @@ namespace UHD_Learn
 
         private void button4_Click(object sender, EventArgs e)
         {
-            //MyGrades mygrades = new MyGrades();
-            //mygrades.Show();
-            //this.Hide();
+            Form sGrade = new sGrades();
+            this.Hide();
+            sGrade.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -72,6 +72,12 @@
     <Compile Include="sCoursePage.Designer.cs">
       <DependentUpon>sCoursePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="sGrades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sGrades.Designer.cs">
+      <DependentUpon>sGrades.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="sCoursePage.resx" />
+    <EmbeddedResource Include="sGrades.resx" />
     <EmbeddedResource Include="StudentPage.resx" />
     <EmbeddedResource Include="tCoursePage.resx" />
     <EmbeddedResource Include="TeacherPage.resx" />
