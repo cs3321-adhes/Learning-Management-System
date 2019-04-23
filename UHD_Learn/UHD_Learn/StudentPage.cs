@@ -20,6 +20,12 @@ namespace UHD_Learn
             InitializeComponent();
         }
 
+        public string gatorID { get; private set; }
+
+        public void setGatorID(string s)
+        {
+            gatorID = s;
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -34,7 +40,7 @@ namespace UHD_Learn
         private void StudentPage_Load(object sender, EventArgs e)
         {
             con.Open();
-            SqlCommand cmd = new SqlCommand("Select * FROM Student where fname='Andrew'", con);
+            SqlCommand cmd = new SqlCommand("Select * FROM Student where fname='Hung'", con);
             
             SqlDataReader rd = cmd.ExecuteReader();
             string fname = "";
@@ -58,11 +64,31 @@ namespace UHD_Learn
             this.Text = "Welcome, " + fname;
             rd.Close();
 
-            SqlCommand cmd1 = new SqlCommand("Select * FROM Course where CRN IN ('23924','24776')", con);
+            SqlCommand cmd1 = new SqlCommand("Select * FROM Student where gatorID ='" + gatorID + "'", con);
 
             rd = cmd1.ExecuteReader();
 
+            List<String> courseID = new List<String>();
+
+            if (rd.HasRows)
+            {
+                while (rd.Read())
+                {
+                    
+                    courseID.Add(rd.GetString(4).Trim());
+                    courseID.Add(rd.GetString(5).Trim());
+                    courseID.Add(rd.GetString(6).Trim());
+                    courseID.Add(rd.GetString(7).Trim());
+                }
+            }
+
+            rd.Close();
+
+            SqlCommand cmd2 = new SqlCommand("Select * FROM Course WHERE CRN IN ('" + courseID[0] + "','" + courseID[1] + "','" + courseID[2] + "','" + courseID[3] +"')", con);
+            rd = cmd2.ExecuteReader();
+
             List<Course> courseNames = new List<Course>();
+
 
             if (rd.HasRows)
             {
