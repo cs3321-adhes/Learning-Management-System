@@ -98,6 +98,7 @@
             this.Course4btn.Size = new System.Drawing.Size(289, 66);
             this.Course4btn.TabIndex = 3;
             this.Course4btn.UseVisualStyleBackColor = true;
+            this.Course4btn.Visible = false;
             this.Course4btn.Click += new System.EventHandler(this.button4_Click);
             // 
             // Course3btn
@@ -109,6 +110,7 @@
             this.Course3btn.Size = new System.Drawing.Size(289, 68);
             this.Course3btn.TabIndex = 2;
             this.Course3btn.UseVisualStyleBackColor = true;
+            this.Course3btn.Visible = false;
             this.Course3btn.Click += new System.EventHandler(this.Course3btn_Click);
             // 
             // Course2btn
@@ -120,6 +122,7 @@
             this.Course2btn.Size = new System.Drawing.Size(289, 68);
             this.Course2btn.TabIndex = 1;
             this.Course2btn.UseVisualStyleBackColor = true;
+            this.Course2btn.Visible = false;
             this.Course2btn.Click += new System.EventHandler(this.Course2btn_Click);
             // 
             // Course1btn
@@ -131,6 +134,7 @@
             this.Course1btn.Size = new System.Drawing.Size(289, 71);
             this.Course1btn.TabIndex = 0;
             this.Course1btn.UseVisualStyleBackColor = true;
+            this.Course1btn.Visible = false;
             this.Course1btn.Click += new System.EventHandler(this.Course1btn_Click);
             // 
             // label1
@@ -543,6 +547,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "sGrades";
             this.Text = "Grades";
+            this.Load += new System.EventHandler(this.sGrades_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

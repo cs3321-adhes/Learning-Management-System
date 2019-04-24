@@ -16,6 +16,11 @@ namespace UHD_Learn
         public string Crn { get; protected internal set; }
 
         public string gatorID { get; protected internal set; }
+
+        public string course1 { get; protected internal set; }
+        public string course2 { get; protected internal set; }
+        public string course3 { get; protected internal set; }
+        public string course4 { get; protected internal set; }
         
         SqlConnection con = new SqlConnection("Data Source=ASUSVIVOBOOK\\SQLEXPRESS;Initial Catalog=UHD_Learn;Integrated Security=True"); 
 
@@ -118,7 +123,7 @@ namespace UHD_Learn
 
         private void Course1btn_Click(object sender, EventArgs e)
         {
-
+            CourseInfotxt.Clear();
             con.Open();
             SqlCommand cmd = new SqlCommand("Select * FROM [23924] where gatorID ='" + gatorID.Trim() + "'", con);
             SqlDataReader rd = cmd.ExecuteReader();
@@ -138,8 +143,7 @@ namespace UHD_Learn
             }
 
 
-            CourseInfotxt.Clear();
-            CourseInfotxt.AppendText("CS_4303 29362: Hung Lin-T 4:00-5:15 pm");
+            
             CourseInfotxt.Show();
             Itemlbl.Show();
             DueDatelbl.Show();
@@ -164,12 +168,48 @@ namespace UHD_Learn
             dueDate4.Show();
             dueDate5.Show();
             dueDate6.Show();
+            con.Close();
         }
 
         private void LogOutbtn_Click(object sender, EventArgs e)
         {
             this.Close();
             Application.OpenForms["Login"].Show();
+        }
+
+        public void setName(string s)
+        {
+            Namelbl.Text = s;
+        }
+
+        private void sGrades_Load(object sender, EventArgs e)
+        {
+            //con.Open();
+            if (course1 != null)
+            {
+                Course1btn.Text = course1;
+                Course1btn.Show();
+            }
+
+            if (course2 != null)
+            {
+                Course2btn.Text = course2;
+                Course2btn.Show();
+            }
+
+            if (course3 != null)
+            {
+                Course3btn.Text = course3;
+                Course3btn.Show();
+            }
+
+            if (course4 != null)
+            {
+                Course4btn.Text = course4;
+                Course4btn.Show();
+            }
+            
+
         }
     }
 }

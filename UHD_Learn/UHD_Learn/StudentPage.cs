@@ -16,6 +16,7 @@ namespace UHD_Learn
     {
         SqlConnection con = new SqlConnection("Data Source=ASUSVIVOBOOK\\SQLEXPRESS;Initial Catalog=UHD_Learn;Integrated Security=True");
         List<Course> courseNames = new List<Course>();
+        private int numOfCourse;
 
         public StudentPage()
         {
@@ -69,10 +70,10 @@ namespace UHD_Learn
                 while (rd.Read())
                 {
                     
-                    courseID.Add(rd.GetString(4).Trim());
-                    courseID.Add(rd.GetString(5).Trim());
-                    courseID.Add(rd.GetString(6).Trim());
-                    courseID.Add(rd.GetString(7).Trim());
+                    courseID.Add(rd.IsDBNull(4) ? null : rd.GetString(4).Trim());
+                    courseID.Add(rd.IsDBNull(5) ? null : rd.GetString(5).Trim());
+                    courseID.Add(rd.IsDBNull(6) ? null : rd.GetString(6).Trim());
+                    courseID.Add(rd.IsDBNull(7) ? null : rd.GetString(7).Trim());
                 }
             }
 
@@ -92,7 +93,7 @@ namespace UHD_Learn
 
                 }
             }
-            var numOfCourse = courseNames.Count;
+            numOfCourse = courseNames.Count;
             switch (numOfCourse)
             {
                 case 1:
@@ -173,9 +174,7 @@ namespace UHD_Learn
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //GPA gpa = new GPA();
-            //gpa.Show();
-            //this.Hide();
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -193,9 +192,37 @@ namespace UHD_Learn
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form sGrade = new sGrades();
+            sGrades studentGrades = new sGrades();
+            switch (numOfCourse)
+            {
+                case 1:
+                    studentGrades.course1 = courseNames[0].Subj + " " + courseNames[0].Cnum + "-" + courseNames[0].Name;
+                    break;
+                case 2:
+                    studentGrades.course1 = courseNames[0].Subj + " " + courseNames[0].Cnum + "-" + courseNames[0].Name;
+                    studentGrades.course2 = courseNames[1].Subj + " " + courseNames[1].Cnum + "-" + courseNames[1].Name;
+                    break;
+                case 3:
+                    studentGrades.course1 = courseNames[0].Subj + " " + courseNames[0].Cnum + "-" + courseNames[0].Name;
+                    studentGrades.course2 = courseNames[1].Subj + " " + courseNames[1].Cnum + "-" + courseNames[1].Name;
+                    studentGrades.course3 = courseNames[2].Subj + " " + courseNames[2].Cnum + "-" + courseNames[2].Name;
+                    break;
+                case 4:
+                    studentGrades.course1 = courseNames[0].Subj + " " + courseNames[0].Cnum + "-" + courseNames[0].Name;
+                    studentGrades.course2 = courseNames[1].Subj + " " + courseNames[1].Cnum + "-" + courseNames[1].Name;
+                    studentGrades.course3 = courseNames[2].Subj + " " + courseNames[2].Cnum + "-" + courseNames[2].Name;
+                    studentGrades.course4 = courseNames[3].Subj + " " + courseNames[3].Cnum + "-" + courseNames[3].Name;
+                    break;
+                default:
+                    break;
+            }
+            
+            
+            studentGrades.gatorID = gatorID;
+            studentGrades.setName(label2.Text);
+
             this.Hide();
-            sGrade.Show();
+            studentGrades.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
