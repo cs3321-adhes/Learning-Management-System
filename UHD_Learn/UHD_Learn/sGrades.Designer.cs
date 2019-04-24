@@ -342,9 +342,9 @@
             this.TotalGradelbl.Location = new System.Drawing.Point(20, 383);
             this.TotalGradelbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TotalGradelbl.Name = "TotalGradelbl";
-            this.TotalGradelbl.Size = new System.Drawing.Size(115, 25);
+            this.TotalGradelbl.Size = new System.Drawing.Size(61, 25);
             this.TotalGradelbl.TabIndex = 8;
-            this.TotalGradelbl.Text = "Total Grade";
+            this.TotalGradelbl.Text = "Total ";
             this.TotalGradelbl.Visible = false;
             // 
             // Midterm2lbl
@@ -472,6 +472,7 @@
             this.CourseInfotxt.Location = new System.Drawing.Point(357, 9);
             this.CourseInfotxt.Margin = new System.Windows.Forms.Padding(4);
             this.CourseInfotxt.Name = "CourseInfotxt";
+            this.CourseInfotxt.ReadOnly = true;
             this.CourseInfotxt.Size = new System.Drawing.Size(678, 34);
             this.CourseInfotxt.TabIndex = 2;
             this.CourseInfotxt.Visible = false;
@@ -533,6 +534,7 @@
             this.HomeBtt.Size = new System.Drawing.Size(67, 64);
             this.HomeBtt.TabIndex = 7;
             this.HomeBtt.UseVisualStyleBackColor = false;
+            this.HomeBtt.Click += new System.EventHandler(this.HomeBtt_Click);
             // 
             // sGrades
             // 

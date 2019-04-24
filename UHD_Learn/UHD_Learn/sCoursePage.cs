@@ -81,7 +81,7 @@ namespace UHD_Learn
         {
             sGrades studentGrades = new sGrades();
 
-            studentGrades.Crn = this.Tag.ToString();
+            //studentGrades.Crn = this.Tag.ToString();
             studentGrades.gatorID = gatorID;
 
             this.Hide();

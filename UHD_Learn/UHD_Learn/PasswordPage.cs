@@ -29,7 +29,13 @@ namespace UHD_Learn
 
         private void windowClosed(object sender, FormClosedEventArgs e)
         {
-            Environment.Exit(0);
+            
+        }
+
+        private void returnButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.OpenForms["Login"].Show();
         }
     }
 }

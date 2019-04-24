@@ -131,28 +131,28 @@ namespace UHD_Learn
 
         }
 
-        public class Course
-        {
-            public string Crn { get; private set; }
+        //public class Course
+        //{
+        //    public string Crn { get; private set; }
 
-            public string Subj { get; private set; }
+        //    public string Subj { get; private set; }
 
-            public string Cnum { get; private set; }
+        //    public string Cnum { get; private set; }
 
-            public string Name { get; private set; }
+        //    public string Name { get; private set; }
 
-            public string tName { get; private set; }
+        //    public string tName { get; private set; }
 
-            public Course(string c, string s, string cn, string n, string t)
-            {
-                Crn = c;
-                Subj = s;
-                Cnum = cn;
-                Name = n;
-                tName = t;
-            }
+        //    public Course(string c, string s, string cn, string n, string t)
+        //    {
+        //        Crn = c;
+        //        Subj = s;
+        //        Cnum = cn;
+        //        Name = n;
+        //        tName = t;
+        //    }
 
-        }
+        //}
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -197,21 +197,31 @@ namespace UHD_Learn
             {
                 case 1:
                     studentGrades.course1 = courseNames[0].Subj + " " + courseNames[0].Cnum + "-" + courseNames[0].Name;
+                    studentGrades.Crn1 = courseNames[0].Crn;
                     break;
                 case 2:
                     studentGrades.course1 = courseNames[0].Subj + " " + courseNames[0].Cnum + "-" + courseNames[0].Name;
+                    studentGrades.Crn1 = courseNames[0].Crn;
                     studentGrades.course2 = courseNames[1].Subj + " " + courseNames[1].Cnum + "-" + courseNames[1].Name;
+                    studentGrades.Crn2 = courseNames[1].Crn;
                     break;
                 case 3:
                     studentGrades.course1 = courseNames[0].Subj + " " + courseNames[0].Cnum + "-" + courseNames[0].Name;
+                    studentGrades.Crn1 = courseNames[0].Crn;
                     studentGrades.course2 = courseNames[1].Subj + " " + courseNames[1].Cnum + "-" + courseNames[1].Name;
+                    studentGrades.Crn2 = courseNames[1].Crn;
                     studentGrades.course3 = courseNames[2].Subj + " " + courseNames[2].Cnum + "-" + courseNames[2].Name;
+                    studentGrades.Crn3 = courseNames[2].Crn;
                     break;
                 case 4:
                     studentGrades.course1 = courseNames[0].Subj + " " + courseNames[0].Cnum + "-" + courseNames[0].Name;
+                    studentGrades.Crn1 = courseNames[0].Crn;
                     studentGrades.course2 = courseNames[1].Subj + " " + courseNames[1].Cnum + "-" + courseNames[1].Name;
+                    studentGrades.Crn2 = courseNames[1].Crn;
                     studentGrades.course3 = courseNames[2].Subj + " " + courseNames[2].Cnum + "-" + courseNames[2].Name;
+                    studentGrades.Crn3 = courseNames[2].Crn;
                     studentGrades.course4 = courseNames[3].Subj + " " + courseNames[3].Cnum + "-" + courseNames[3].Name;
+                    studentGrades.Crn4 = courseNames[3].Crn;
                     break;
                 default:
                     break;

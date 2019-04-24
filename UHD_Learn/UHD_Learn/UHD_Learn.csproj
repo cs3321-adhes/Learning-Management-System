@@ -87,7 +87,9 @@
     <Compile Include="tCoursePage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="tCoursePage.Designer.cs" />
+    <Compile Include="tCoursePage.Designer.cs">
+      <DependentUpon>tCoursePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="TeacherPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,7 +108,9 @@
       <DependentUpon>UHD_LearnDataSet.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Login.resx" />
-    <EmbeddedResource Include="PasswordPage.resx" />
+    <EmbeddedResource Include="PasswordPage.resx">
+      <DependentUpon>PasswordPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

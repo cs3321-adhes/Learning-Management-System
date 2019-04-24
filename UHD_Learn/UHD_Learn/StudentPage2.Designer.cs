@@ -22,14 +22,14 @@ namespace UHD_Learn {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class sCoursePage {
+    internal class StudentPage {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal sCoursePage() {
+        internal StudentPage() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace UHD_Learn {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("UHD_Learn.sCoursePage", typeof(sCoursePage).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("UHD_Learn.StudentPage", typeof(StudentPage).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

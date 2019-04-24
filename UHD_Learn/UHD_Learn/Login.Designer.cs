@@ -129,6 +129,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.Text = "UHD Learn";
+            
             this.Load += new System.EventHandler(this.Login_Load);
             this.Shown += new System.EventHandler(this.formShown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

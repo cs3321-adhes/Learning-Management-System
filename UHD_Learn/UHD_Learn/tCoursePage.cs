@@ -170,7 +170,7 @@ namespace UHD_Learn
 
             SqlDataReader rd = cmd.ExecuteReader();
 
-            Course course = new Course("", "", "", "");
+            Course course = new Course("", "", "", "", "");
 
             // If there are courses taught by this teacher
             if (rd.HasRows)

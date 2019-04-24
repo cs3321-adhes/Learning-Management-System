@@ -51,7 +51,7 @@ namespace UHD_Learn
                 while (rd.Read())
                 {
                     // Add course info to course list
-                    courseNames.Add(new Course(rd.GetString(0).Trim(), rd.GetString(1).Trim(), rd.GetString(2).Trim(), rd.GetString(3).Trim()));             
+                    courseNames.Add(new Course(rd.GetString(0).Trim(), rd.GetString(1).Trim(), rd.GetString(2).Trim(), rd.GetString(3).Trim(), rd.GetString(4)));             
                     
                 }
             }
@@ -194,14 +194,17 @@ namespace UHD_Learn
 
         public string Name { get; protected internal set; }
 
+        public string tName { get; protected internal set; }
+
 
         // parametized constructor
-        public Course(string c, string s, string cn, string n)
+        public Course(string c, string s, string cn, string n, string t)
         {
             Crn = c;
             Subj = s;
             Cnum = cn;
             Name = n;
+            tName = t;
         }
 
     }
