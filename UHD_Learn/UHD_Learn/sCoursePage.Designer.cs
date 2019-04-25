@@ -740,10 +740,10 @@
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1336, 726);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.CourseConPanel);
-            this.Controls.Add(this.SyllabusPanel);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
+            this.Controls.Add(this.CourseConPanel);
+            this.Controls.Add(this.SyllabusPanel);
             this.Controls.Add(this.AssignPanel);
             this.Controls.Add(this.HomePanel);
             this.Margin = new System.Windows.Forms.Padding(4);

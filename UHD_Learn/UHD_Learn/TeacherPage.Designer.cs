@@ -46,7 +46,6 @@
             this.mycoursesBTTN = new System.Windows.Forms.Button();
             this.calendarBTTN = new System.Windows.Forms.Button();
             this.announcementBTTN = new System.Windows.Forms.Button();
-            this.upgradeinfoBTTN = new System.Windows.Forms.Button();
             this.announcementPanel = new System.Windows.Forms.Panel();
             this.announcement = new System.Windows.Forms.Label();
             this.welcomePanel = new System.Windows.Forms.Panel();
@@ -226,7 +225,6 @@
             this.panel4.Controls.Add(this.mycoursesBTTN);
             this.panel4.Controls.Add(this.calendarBTTN);
             this.panel4.Controls.Add(this.announcementBTTN);
-            this.panel4.Controls.Add(this.upgradeinfoBTTN);
             this.panel4.Location = new System.Drawing.Point(21, 209);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
@@ -236,7 +234,7 @@
             // mycoursesBTTN
             // 
             this.mycoursesBTTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mycoursesBTTN.Location = new System.Drawing.Point(22, 88);
+            this.mycoursesBTTN.Location = new System.Drawing.Point(22, 136);
             this.mycoursesBTTN.Margin = new System.Windows.Forms.Padding(4);
             this.mycoursesBTTN.Name = "mycoursesBTTN";
             this.mycoursesBTTN.Size = new System.Drawing.Size(195, 46);
@@ -260,7 +258,7 @@
             // announcementBTTN
             // 
             this.announcementBTTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.announcementBTTN.Location = new System.Drawing.Point(22, 19);
+            this.announcementBTTN.Location = new System.Drawing.Point(22, 47);
             this.announcementBTTN.Margin = new System.Windows.Forms.Padding(4);
             this.announcementBTTN.Name = "announcementBTTN";
             this.announcementBTTN.Size = new System.Drawing.Size(195, 46);
@@ -268,17 +266,6 @@
             this.announcementBTTN.Text = "Announcements";
             this.announcementBTTN.UseVisualStyleBackColor = true;
             this.announcementBTTN.Click += new System.EventHandler(this.announcementBTTN_Click_1);
-            // 
-            // upgradeinfoBTTN
-            // 
-            this.upgradeinfoBTTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.upgradeinfoBTTN.Location = new System.Drawing.Point(22, 159);
-            this.upgradeinfoBTTN.Margin = new System.Windows.Forms.Padding(4);
-            this.upgradeinfoBTTN.Name = "upgradeinfoBTTN";
-            this.upgradeinfoBTTN.Size = new System.Drawing.Size(195, 46);
-            this.upgradeinfoBTTN.TabIndex = 4;
-            this.upgradeinfoBTTN.Text = "Update Info";
-            this.upgradeinfoBTTN.UseVisualStyleBackColor = true;
             // 
             // announcementPanel
             // 
@@ -396,7 +383,6 @@
         private System.Windows.Forms.Button mycoursesBTTN;
         private System.Windows.Forms.Button calendarBTTN;
         private System.Windows.Forms.Button announcementBTTN;
-        private System.Windows.Forms.Button upgradeinfoBTTN;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel announcementPanel;
         private System.Windows.Forms.Label announcement;

@@ -134,12 +134,18 @@
     <EmbeddedResource Include="sCoursePage.resx">
       <DependentUpon>sCoursePage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="sGrades.resx" />
+    <EmbeddedResource Include="sGrades.resx">
+      <DependentUpon>sGrades.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StudentPage.resx">
       <DependentUpon>StudentPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="tCoursePage.resx" />
-    <EmbeddedResource Include="TeacherPage.resx" />
+    <EmbeddedResource Include="tCoursePage.resx">
+      <DependentUpon>tCoursePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherPage.resx">
+      <DependentUpon>TeacherPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="tGrades.resx">
       <DependentUpon>tGrades.cs</DependentUpon>
     </EmbeddedResource>

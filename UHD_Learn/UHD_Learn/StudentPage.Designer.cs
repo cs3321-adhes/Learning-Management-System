@@ -32,7 +32,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.gpaBTTN = new System.Windows.Forms.Button();
-            this.upgradeinfoBTTN = new System.Windows.Forms.Button();
             this.mygradesBTTN = new System.Windows.Forms.Button();
             this.announcementBTTN = new System.Windows.Forms.Button();
             this.HomeBtt = new System.Windows.Forms.Button();
@@ -102,22 +101,10 @@
             this.gpaBTTN.UseVisualStyleBackColor = true;
             this.gpaBTTN.Click += new System.EventHandler(this.gpaBTTN_Click);
             // 
-            // upgradeinfoBTTN
-            // 
-            this.upgradeinfoBTTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.upgradeinfoBTTN.Location = new System.Drawing.Point(32, 185);
-            this.upgradeinfoBTTN.Margin = new System.Windows.Forms.Padding(4);
-            this.upgradeinfoBTTN.Name = "upgradeinfoBTTN";
-            this.upgradeinfoBTTN.Size = new System.Drawing.Size(195, 42);
-            this.upgradeinfoBTTN.TabIndex = 4;
-            this.upgradeinfoBTTN.Text = "Update Info";
-            this.upgradeinfoBTTN.UseVisualStyleBackColor = true;
-            this.upgradeinfoBTTN.Click += new System.EventHandler(this.button3_Click);
-            // 
             // mygradesBTTN
             // 
             this.mygradesBTTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mygradesBTTN.Location = new System.Drawing.Point(32, 86);
+            this.mygradesBTTN.Location = new System.Drawing.Point(32, 97);
             this.mygradesBTTN.Margin = new System.Windows.Forms.Padding(4);
             this.mygradesBTTN.Name = "mygradesBTTN";
             this.mygradesBTTN.Size = new System.Drawing.Size(195, 42);
@@ -192,7 +179,6 @@
             this.panel2.Controls.Add(this.calendarBTTN);
             this.panel2.Controls.Add(this.announcementBTTN);
             this.panel2.Controls.Add(this.gpaBTTN);
-            this.panel2.Controls.Add(this.upgradeinfoBTTN);
             this.panel2.Controls.Add(this.mygradesBTTN);
             this.panel2.Location = new System.Drawing.Point(21, 209);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
@@ -203,7 +189,7 @@
             // mycoursesBTTN
             // 
             this.mycoursesBTTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mycoursesBTTN.Location = new System.Drawing.Point(32, 135);
+            this.mycoursesBTTN.Location = new System.Drawing.Point(32, 159);
             this.mycoursesBTTN.Margin = new System.Windows.Forms.Padding(4);
             this.mycoursesBTTN.Name = "mycoursesBTTN";
             this.mycoursesBTTN.Size = new System.Drawing.Size(195, 42);
@@ -215,7 +201,7 @@
             // calendarBTTN
             // 
             this.calendarBTTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calendarBTTN.Location = new System.Drawing.Point(32, 234);
+            this.calendarBTTN.Location = new System.Drawing.Point(32, 221);
             this.calendarBTTN.Margin = new System.Windows.Forms.Padding(4);
             this.calendarBTTN.Name = "calendarBTTN";
             this.calendarBTTN.Size = new System.Drawing.Size(195, 42);
@@ -432,7 +418,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button gpaBTTN;
-        private System.Windows.Forms.Button upgradeinfoBTTN;
         private System.Windows.Forms.Button mygradesBTTN;
         private System.Windows.Forms.Button announcementBTTN;
         private System.Windows.Forms.Button HomeBtt;
