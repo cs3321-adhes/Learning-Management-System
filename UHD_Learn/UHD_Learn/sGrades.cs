@@ -71,7 +71,6 @@ namespace UHD_Learn
             SetGradesAndInfoText(Crn1, gatorID);
             showGradeLabels();
             
-            con.Close();
         }
 
         private void LogOutbtn_Click(object sender, EventArgs e)
@@ -92,6 +91,10 @@ namespace UHD_Learn
             {
                 Course1btn.Text = course1;
                 Course1btn.Show();
+                CourseInfotxt.Clear();
+                clearGrades();
+                SetGradesAndInfoText(Crn1, gatorID);
+                showGradeLabels();
             }
 
             if (course2 != null)
@@ -193,7 +196,7 @@ namespace UHD_Learn
             Midterm1lbl.Show();
             Midterm2lbl.Show();
             finalExamlbl.Show();
-            TotalGradelbl.Show();
+            //TotalGradelbl.Show();
             Hw1Gradetxt.Show();
             Hw2Gradetxt.Show();
             MidtermGrade2txt.Show();

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,11 @@ namespace UHD_Learn
 {
     public partial class sCoursePage : Form
     {
+
+        SqlConnection con = new SqlConnection("Data Source=ASUSVIVOBOOK\\SQLEXPRESS;Initial Catalog=UHD_Learn;Integrated Security=True");
         public string gatorID { get; protected internal set; }
+        public string Crn { get; protected internal set; }
+        public string gradeLabel { get; protected internal set; }
 
         public sCoursePage()
         {
@@ -81,8 +86,10 @@ namespace UHD_Learn
         {
             sGrades studentGrades = new sGrades();
 
-            //studentGrades.Crn = this.Tag.ToString();
+            studentGrades.course1 = gradeLabel;
             studentGrades.gatorID = gatorID;
+            studentGrades.Crn1 = Crn;
+            studentGrades.setName(label2.Text);
 
             this.Hide();
 

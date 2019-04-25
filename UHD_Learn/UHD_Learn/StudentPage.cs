@@ -74,6 +74,7 @@ namespace UHD_Learn
                     courseID.Add(rd.IsDBNull(5) ? null : rd.GetString(5).Trim());
                     courseID.Add(rd.IsDBNull(6) ? null : rd.GetString(6).Trim());
                     courseID.Add(rd.IsDBNull(7) ? null : rd.GetString(7).Trim());
+
                 }
             }
 
@@ -102,23 +103,23 @@ namespace UHD_Learn
                     break;
                 case 2:
                     courseLabel1.Text = courseNames[0].Crn + " " + courseNames[0].Subj + "_" + courseNames[0].Cnum + ": " + courseNames[0].Name + "-" + courseNames[0].tName;
-                    courseLabel2.Text = courseNames[1].Crn + " " + courseNames[1].Subj + "_" + courseNames[1].Cnum + ": " + courseNames[1].Name + "-" + courseNames[0].tName;
+                    courseLabel2.Text = courseNames[1].Crn + " " + courseNames[1].Subj + "_" + courseNames[1].Cnum + ": " + courseNames[1].Name + "-" + courseNames[1].tName;
                     courseLabel1.Show();
                     courseLabel2.Show();
                     break;
                 case 3:
                     courseLabel1.Text = courseNames[0].Crn + " " + courseNames[0].Subj + "_" + courseNames[0].Cnum + ": " + courseNames[0].Name + "-" + courseNames[0].tName;
-                    courseLabel2.Text = courseNames[1].Crn + " " + courseNames[1].Subj + "_" + courseNames[1].Cnum + ": " + courseNames[1].Name + "-" + courseNames[0].tName;
-                    courseLabel3.Text = courseNames[2].Crn + " " + courseNames[2].Subj + "_" + courseNames[2].Cnum + ": " + courseNames[2].Name + "-" + courseNames[0].tName;
+                    courseLabel2.Text = courseNames[1].Crn + " " + courseNames[1].Subj + "_" + courseNames[1].Cnum + ": " + courseNames[1].Name + "-" + courseNames[1].tName;
+                    courseLabel3.Text = courseNames[2].Crn + " " + courseNames[2].Subj + "_" + courseNames[2].Cnum + ": " + courseNames[2].Name + "-" + courseNames[2].tName;
                     courseLabel1.Show();
                     courseLabel2.Show();
                     courseLabel3.Show();
                     break;
                 case 4:
                     courseLabel1.Text = courseNames[0].Crn + " " + courseNames[0].Subj + "_" + courseNames[0].Cnum + ": " + courseNames[0].Name + "-" + courseNames[0].tName;
-                    courseLabel2.Text = courseNames[1].Crn + " " + courseNames[1].Subj + "_" + courseNames[1].Cnum + ": " + courseNames[1].Name + "-" + courseNames[0].tName;
-                    courseLabel3.Text = courseNames[2].Crn + " " + courseNames[2].Subj + "_" + courseNames[2].Cnum + ": " + courseNames[2].Name + "-" + courseNames[0].tName;
-                    courseLabel4.Text = courseNames[3].Crn + " " + courseNames[3].Subj + "_" + courseNames[3].Cnum + ": " + courseNames[3].Name + "-" + courseNames[0].tName;
+                    courseLabel2.Text = courseNames[1].Crn + " " + courseNames[1].Subj + "_" + courseNames[1].Cnum + ": " + courseNames[1].Name + "-" + courseNames[1].tName;
+                    courseLabel3.Text = courseNames[2].Crn + " " + courseNames[2].Subj + "_" + courseNames[2].Cnum + ": " + courseNames[2].Name + "-" + courseNames[2].tName;
+                    courseLabel4.Text = courseNames[3].Crn + " " + courseNames[3].Subj + "_" + courseNames[3].Cnum + ": " + courseNames[3].Name + "-" + courseNames[3].tName;
                     courseLabel1.Show();
                     courseLabel2.Show();
                     courseLabel3.Show();
@@ -131,55 +132,18 @@ namespace UHD_Learn
 
         }
 
-        //public class Course
-        //{
-        //    public string Crn { get; private set; }
-
-        //    public string Subj { get; private set; }
-
-        //    public string Cnum { get; private set; }
-
-        //    public string Name { get; private set; }
-
-        //    public string tName { get; private set; }
-
-        //    public Course(string c, string s, string cn, string n, string t)
-        //    {
-        //        Crn = c;
-        //        Subj = s;
-        //        Cnum = cn;
-        //        Name = n;
-        //        tName = t;
-        //    }
-
-        //}
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             sCoursePage scPage = new sCoursePage();
             scPage.Text = courseLabel1.Text;
             scPage.setLabel(courseLabel1.Text);
             scPage.setLabel2(label2.Text);
-            scPage.setTag(courseNames[0].Crn);
+            scPage.Crn = courseNames[0].Crn;
+            scPage.gradeLabel = courseNames[0].Subj + " " + courseNames[0].Cnum + "-" + courseNames[0].Name;
             scPage.gatorID = gatorID;
 
             this.Hide();
             scPage.Show();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -266,24 +230,7 @@ namespace UHD_Learn
             this.Hide();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-            StudentPage studentpage = new StudentPage();
-            studentpage.Show();
-            this.Hide();
-        }
-
         private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
@@ -297,6 +244,48 @@ namespace UHD_Learn
         {
             this.Close();
             Application.OpenForms["Login"].Show();
+        }
+
+        private void courseLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            sCoursePage scPage = new sCoursePage();
+            scPage.Text = courseLabel2.Text;
+            scPage.setLabel(courseLabel2.Text);
+            scPage.setLabel2(label2.Text);
+            scPage.Crn = courseNames[1].Crn;
+            scPage.gradeLabel = courseNames[1].Subj + " " + courseNames[1].Cnum + "-" + courseNames[1].Name;
+            scPage.gatorID = gatorID;
+
+            this.Hide();
+            scPage.Show();
+        }
+
+        private void courseLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            sCoursePage scPage = new sCoursePage();
+            scPage.Text = courseLabel3.Text;
+            scPage.setLabel(courseLabel3.Text);
+            scPage.setLabel2(label2.Text);
+            scPage.Crn = courseNames[2].Crn;
+            scPage.gradeLabel = courseNames[2].Subj + " " + courseNames[2].Cnum + "-" + courseNames[2].Name;
+            scPage.gatorID = gatorID;
+
+            this.Hide();
+            scPage.Show();
+        }
+
+        private void courseLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            sCoursePage scPage = new sCoursePage();
+            scPage.Text = courseLabel4.Text;
+            scPage.setLabel(courseLabel4.Text);
+            scPage.setLabel2(label2.Text);
+            scPage.Crn = courseNames[3].Crn;
+            scPage.gradeLabel = courseNames[3].Subj + " " + courseNames[3].Cnum + "-" + courseNames[3].Name;
+            scPage.gatorID = gatorID;
+
+            this.Hide();
+            scPage.Show();
         }
     }
 }

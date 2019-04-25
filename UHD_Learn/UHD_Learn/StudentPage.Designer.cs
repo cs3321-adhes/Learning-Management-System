@@ -89,7 +89,7 @@
             this.label2.Size = new System.Drawing.Size(81, 29);
             this.label2.TabIndex = 2;
             this.label2.Text = "label2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            
             // 
             // gpaBTTN
             // 
@@ -101,7 +101,7 @@
             this.gpaBTTN.TabIndex = 3;
             this.gpaBTTN.Text = "Estimate GPA";
             this.gpaBTTN.UseVisualStyleBackColor = true;
-            this.gpaBTTN.Click += new System.EventHandler(this.button2_Click);
+           
             // 
             // upgradeinfoBTTN
             // 
@@ -275,6 +275,7 @@
             this.courseLabel4.TabStop = true;
             this.courseLabel4.Text = "linkLabel4";
             this.courseLabel4.Visible = false;
+            this.courseLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.courseLabel4_LinkClicked);
             // 
             // courseLabel3
             // 
@@ -287,6 +288,7 @@
             this.courseLabel3.TabStop = true;
             this.courseLabel3.Text = "linkLabel3";
             this.courseLabel3.Visible = false;
+            this.courseLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.courseLabel3_LinkClicked);
             // 
             // courseLabel2
             // 
@@ -299,6 +301,7 @@
             this.courseLabel2.TabStop = true;
             this.courseLabel2.Text = "linkLabel2";
             this.courseLabel2.Visible = false;
+            this.courseLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.courseLabel2_LinkClicked);
             // 
             // courseLabel1
             // 
