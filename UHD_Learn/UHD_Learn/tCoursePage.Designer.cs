@@ -75,6 +75,12 @@
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.linkLabel8 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel9 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel10 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel11 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel12 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel13 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -301,6 +307,12 @@
             // CourseConPanel
             // 
             this.CourseConPanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CourseConPanel.Controls.Add(this.linkLabel13);
+            this.CourseConPanel.Controls.Add(this.linkLabel12);
+            this.CourseConPanel.Controls.Add(this.linkLabel11);
+            this.CourseConPanel.Controls.Add(this.linkLabel10);
+            this.CourseConPanel.Controls.Add(this.linkLabel9);
+            this.CourseConPanel.Controls.Add(this.linkLabel8);
             this.CourseConPanel.Controls.Add(this.button6);
             this.CourseConPanel.Controls.Add(this.linkLabel2);
             this.CourseConPanel.Location = new System.Drawing.Point(313, 231);
@@ -622,6 +634,78 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // linkLabel8
+            // 
+            this.linkLabel8.AutoSize = true;
+            this.linkLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel8.Location = new System.Drawing.Point(79, 133);
+            this.linkLabel8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel8.Name = "linkLabel8";
+            this.linkLabel8.Size = new System.Drawing.Size(93, 25);
+            this.linkLabel8.TabIndex = 19;
+            this.linkLabel8.TabStop = true;
+            this.linkLabel8.Text = "Lecture 2";
+            // 
+            // linkLabel9
+            // 
+            this.linkLabel9.AutoSize = true;
+            this.linkLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel9.Location = new System.Drawing.Point(79, 213);
+            this.linkLabel9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel9.Name = "linkLabel9";
+            this.linkLabel9.Size = new System.Drawing.Size(93, 25);
+            this.linkLabel9.TabIndex = 20;
+            this.linkLabel9.TabStop = true;
+            this.linkLabel9.Text = "Lecture 3";
+            // 
+            // linkLabel10
+            // 
+            this.linkLabel10.AutoSize = true;
+            this.linkLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel10.Location = new System.Drawing.Point(79, 298);
+            this.linkLabel10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel10.Name = "linkLabel10";
+            this.linkLabel10.Size = new System.Drawing.Size(93, 25);
+            this.linkLabel10.TabIndex = 21;
+            this.linkLabel10.TabStop = true;
+            this.linkLabel10.Text = "Lecture 4";
+            // 
+            // linkLabel11
+            // 
+            this.linkLabel11.AutoSize = true;
+            this.linkLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel11.Location = new System.Drawing.Point(407, 62);
+            this.linkLabel11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel11.Name = "linkLabel11";
+            this.linkLabel11.Size = new System.Drawing.Size(93, 25);
+            this.linkLabel11.TabIndex = 22;
+            this.linkLabel11.TabStop = true;
+            this.linkLabel11.Text = "Lecture 5";
+            // 
+            // linkLabel12
+            // 
+            this.linkLabel12.AutoSize = true;
+            this.linkLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel12.Location = new System.Drawing.Point(407, 133);
+            this.linkLabel12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel12.Name = "linkLabel12";
+            this.linkLabel12.Size = new System.Drawing.Size(93, 25);
+            this.linkLabel12.TabIndex = 23;
+            this.linkLabel12.TabStop = true;
+            this.linkLabel12.Text = "Lecture 6";
+            // 
+            // linkLabel13
+            // 
+            this.linkLabel13.AutoSize = true;
+            this.linkLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel13.Location = new System.Drawing.Point(407, 210);
+            this.linkLabel13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel13.Name = "linkLabel13";
+            this.linkLabel13.Size = new System.Drawing.Size(93, 25);
+            this.linkLabel13.TabIndex = 24;
+            this.linkLabel13.TabStop = true;
+            this.linkLabel13.Text = "Lecture 7";
+            // 
             // tCoursePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -631,12 +715,12 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
+            this.Controls.Add(this.CourseConPanel);
             this.Controls.Add(this.StudentsPanel);
             this.Controls.Add(this.SyllabusPanel);
             this.Controls.Add(this.HomePanel);
             this.Controls.Add(this.AnnouncementsPanel);
             this.Controls.Add(this.AssignmentsPanel);
-            this.Controls.Add(this.CourseConPanel);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "tCoursePage";
             this.Text = "tCoursePage";
@@ -712,6 +796,12 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.LinkLabel linkLabel13;
+        private System.Windows.Forms.LinkLabel linkLabel12;
+        private System.Windows.Forms.LinkLabel linkLabel11;
+        private System.Windows.Forms.LinkLabel linkLabel10;
+        private System.Windows.Forms.LinkLabel linkLabel9;
+        private System.Windows.Forms.LinkLabel linkLabel8;
     }
 }
 
