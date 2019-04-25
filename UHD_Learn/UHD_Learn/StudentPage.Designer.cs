@@ -89,7 +89,6 @@
             this.label2.Size = new System.Drawing.Size(81, 29);
             this.label2.TabIndex = 2;
             this.label2.Text = "label2";
-            
             // 
             // gpaBTTN
             // 
@@ -101,7 +100,7 @@
             this.gpaBTTN.TabIndex = 3;
             this.gpaBTTN.Text = "Estimate GPA";
             this.gpaBTTN.UseVisualStyleBackColor = true;
-           
+            this.gpaBTTN.Click += new System.EventHandler(this.gpaBTTN_Click);
             // 
             // upgradeinfoBTTN
             // 

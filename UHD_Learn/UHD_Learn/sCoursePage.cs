@@ -110,5 +110,11 @@ namespace UHD_Learn
         {
 
         }
+
+        private void LogOutBtt_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.OpenForms["Login"].Show();
+        }
     }
 }

@@ -287,5 +287,17 @@ namespace UHD_Learn
             this.Hide();
             scPage.Show();
         }
+
+        private void gpaBTTN_Click(object sender, EventArgs e)
+        {
+            GPA gpaPage = new GPA();
+
+            gpaPage.gatorID = gatorID;
+
+            this.Hide();
+            gpaPage.Show();
+
+            
+        }
     }
 }
