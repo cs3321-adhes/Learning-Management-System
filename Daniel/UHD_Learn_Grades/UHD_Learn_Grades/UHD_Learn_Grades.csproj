@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyGrades.cs">
+    <Compile Include="sGrades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyGrades.Designer.cs">
-      <DependentUpon>MyGrades.cs</DependentUpon>
+    <Compile Include="sGrades.Designer.cs">
+      <DependentUpon>sGrades.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MyGrades.resx">
-      <DependentUpon>MyGrades.cs</DependentUpon>
+    <EmbeddedResource Include="sGrades.resx">
+      <DependentUpon>sGrades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

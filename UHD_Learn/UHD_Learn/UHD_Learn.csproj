@@ -52,8 +52,76 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GPA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GPA.Designer.cs">
+      <DependentUpon>GPA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasswordPage.Designer.cs">
+      <DependentUpon>PasswordPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sCoursePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sCoursePage.Designer.cs">
+      <DependentUpon>sCoursePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sGrades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sGrades.Designer.cs">
+      <DependentUpon>sGrades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentPage.Designer.cs">
+      <DependentUpon>StudentPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tCoursePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tCoursePage.Designer.cs">
+      <DependentUpon>tCoursePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherPage.Designer.cs">
+      <DependentUpon>TeacherPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tGrades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tGrades.Designer.cs">
+      <DependentUpon>tGrades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UHD_LearnDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UHD_LearnDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GPA.resx">
+      <DependentUpon>GPA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordPage.resx">
+      <DependentUpon>PasswordPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +131,24 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="sCoursePage.resx">
+      <DependentUpon>sCoursePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sGrades.resx">
+      <DependentUpon>sGrades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentPage.resx">
+      <DependentUpon>StudentPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tCoursePage.resx">
+      <DependentUpon>tCoursePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherPage.resx">
+      <DependentUpon>TeacherPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tGrades.resx">
+      <DependentUpon>tGrades.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -72,6 +158,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="UHD_LearnDataSet.xsc">
+      <DependentUpon>UHD_LearnDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UHD_LearnDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UHD_LearnDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UHD_LearnDataSet.xss">
+      <DependentUpon>UHD_LearnDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
